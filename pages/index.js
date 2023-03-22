@@ -32,7 +32,7 @@ const Home = () => {
               <span
                 className={`${styles["split-text"]} ${styles["text-hello"]}`}
               >
-                HELLO THERE 👋 I'M,
+                HEY! THERE 👋 I'M,
               </span>
               <span
                 className={`${styles["split-text"]} ${styles["text-name"]}`}
@@ -47,7 +47,7 @@ const Home = () => {
               <sapn
                 className={`${styles["split-text"]} ${styles["text-about"]}`}
               >
-                I work as <Typewritter />
+                I'M, <Typewritter />
               </sapn>
             </h1>
             <p

@@ -7,19 +7,17 @@ const Typewritter = () => {
       <Typewriter
         options={{
           strings: [
-            "Web Developer",
-            "Frontend Developer",
-            "Backend Developer",
-            "Full Stack Developer",
-            "Wordpress Developer",
-            "Freeelancer",
+            "Web Developer.",
+            "Frontend Developer.",
+            "Backend Developer.",
+            "Full Stack Developer.",
+            "Wordpress Developer.",
+            "Freelancer.",
+            "Coder.",
           ],
           autoStart: true,
           loop: true,
         }}
-        //   onInit={(typewriter) => {
-        //     typewriter
-        //   }}
       />
     </div>
   );
