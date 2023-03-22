@@ -1,0 +1,60 @@
+.menu{
+background-color: white;
+width: fit-content;
+padding: 3px 8px;
+cursor: pointer;
+z-index: 1000;
+user-select: none;
+position: absolute;
+top: 20px;
+right: 20px;
+transition: all 1s;
+}
+
+.menu i{
+    width: 25px;
+    border: 2px solid red;
+    display: block;
+    margin: 4px;
+    
+}
+
+.menu i:nth-child(n){
+    opacity: 1;
+    transition: transform .45s cubic-bezier(.43,.77,.15,1.5), width 0.4s ease, opacity 0.4s ease;
+}
+
+.hover i:nth-child(1){
+    transform: translate3d(0,-4px ,0)
+}
+
+.hover i:last-child{
+    transform: translate3d(0,4px ,0)
+}
+
+
+// .hover i:nth-child(1){
+//     transform: translate3d(0,10px ,0)
+// }
+
+// .hover i:last-child{
+//     transform: translate3d(0,-10px ,0)
+// }
+
+.click i:nth-child(1){
+    transform: translate(0, 10px) rotate(45deg);
+}
+
+.click i:nth-child(2){
+    width: 0;
+    opacity: 0;
+}
+
+.click i:last-child{
+    transform: translate(0,-4px) rotate(-45deg);
+}
+
+.click {
+    transition: all 1s;
+    right: 140px;
+}

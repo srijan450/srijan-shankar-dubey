@@ -1,0 +1,66 @@
+.bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@keyframes hello {
+    from{
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(10px);
+    }
+}
+
+.body{
+    background: url(../../public/Minions-body.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 348px;
+    height: 553.7px;
+    margin-top: 90px;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    transform: translateY(0px);
+    animation: hello 1000ms ease-in-out infinite both alternate;
+    // ease-in-out 0 infinite;
+    //  both both;
+}
+
+
+
+.eyes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.eye{
+    width: 79.7px;
+    height: 68px;
+    border-radius: 50%;
+    float: left;
+    margin: 20px;
+    text-align: center;
+
+}
+.balls{
+    background: url(../../public/minion-eye.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 42.3px;
+    width: 42.3px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:500px) {
+    .bot{
+        // height: 0vh;
+        scale: 0.6;
+        transform: translateY(-40%);
+    }
+
+}
