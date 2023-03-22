@@ -62,17 +62,17 @@ const Home = () => {
               I am an independent creative, IT graduate who likes to craft solid
               and scalable websites with great user experience.
             </p>
-            {/* <div className={styles["button-container"]}>
+            <div className={styles["button-container"]}>
               <a className={styles.button} href="#">
                 Contact me
               </a>
               <br />
               <br />
               <a className={styles.button} href="#">
-                about me{" "}
+                about me
               </a>
               <span></span>
-            </div> */}
+            </div>
           </div>
           <div className={styles.bot}>
             <Bot />

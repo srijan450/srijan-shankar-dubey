@@ -123,7 +123,7 @@
 .button-container{
   display: flex; 
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 20px 0px;
 
 }
@@ -169,5 +169,9 @@
   }
   .text-paragraph{
     font-size: 1.5rem;
+  }
+  .button{
+    padding: 10px 20px;
+  font-size: 1rem;
   }
 }
