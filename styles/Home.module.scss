@@ -43,8 +43,8 @@
 }
 
 .text-name{
-  font-size: 6rem;
-  line-height: 5rem;
+  font-size: 5rem;
+  line-height: 4.5rem;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -52,21 +52,30 @@
 
 .text-hello{
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 4rem;
   word-spacing: .5rem;
 }
 
 .text-about{
   font-size: 3rem;
-  line-height: 5rem;
+  margin-top: 30px;
+  // line-height: 5rem;
+  word-spacing: .5rem;
 }
 
 
 .text-paragraph{
   font-size: 2rem;
+  line-height: 2rem;
   font-weight: 500;
   text-align: justify;
   word-wrap: break-word;
+  word-spacing: .5rem;
+}
+
+.text-paragraph-l1{
+  color: white;
+  font-weight: 800;
 }
 
 .button{
@@ -137,16 +146,12 @@
   .content{
     padding: 20px;
     width: 100%;
-    height: max-content;
-    order: 2;
-    justify-content: flex-start;
+    // height: max-content;
+    // order: 2;
+    // justify-content: flex-start;
   }
   .bot{
-    width: 100%;
-    order: 1;
-    height: 50vh;
-    justify-content: center;
-    border: 1px solid green;
+    display: none;
   }
   .text-name{
     font-size: 2rem;
@@ -161,5 +166,8 @@
   .text-about{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+  .text-paragraph{
+    font-size: 1.5rem;
   }
 }

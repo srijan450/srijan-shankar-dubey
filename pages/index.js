@@ -51,9 +51,10 @@ const Home = () => {
               </sapn>
             </h1>
             <p
-              className={`${styles["split-text"]} ${styles["text-paragraph"]}`}
+              className={`${styles["split-text"]} ${styles["text-paragraph"]} ${styles["text-paragraph-l1"]}`}
+              style={{ color: "white" }}
             >
-              Turning ideas into real life products is my calling
+              Turning ideas into real life products is my calling.
             </p>
             <p
               className={`${styles["split-text"]} ${styles["text-paragraph"]}`}
