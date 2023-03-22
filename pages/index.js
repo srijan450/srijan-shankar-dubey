@@ -47,7 +47,7 @@ const Home = () => {
               <sapn
                 className={`${styles["split-text"]} ${styles["text-about"]}`}
               >
-                I'M, <Typewritter />
+                I'M, a <Typewritter />
               </sapn>
             </h1>
             <p
