@@ -1,9 +1,9 @@
-import Router from "next/router";
+import Router, { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styles from "./MainLoader.module.scss";
 
 const MainLoader = () => {
-  const [loader, setloader] = useState(false);
+  const [loader, setloader] = useState(true);
 
   useEffect(() => {
     Router.events.on("routeChangeStart", () => {
@@ -25,7 +25,19 @@ const MainLoader = () => {
       Router.events.off("routeChangeError", () => setLoading(false));
     };
   }, [Router.events]);
-  //   console.log(Router.events.on);
+
+  const router = useRouter();
+  useEffect(() => {
+    if (router.isReady) {
+      setTimeout(() => {
+        setloader(false);
+      }, 4000);
+      var now = new Date().getTime();
+      var page_load_time = now - performance.timing.navigationStart;
+      console.log("User-perceived page loading time: " + page_load_time);
+    }
+  }, []);
+
   return (
     <div
       className={`${styles["loader-container"]} ${
@@ -35,7 +47,7 @@ const MainLoader = () => {
       }`}
     >
       <div className={styles.loader}>
-        <img src="./public/avatar.png" alt="" />
+        <img src="./avatar.png" alt="" />
       </div>
     </div>
   );

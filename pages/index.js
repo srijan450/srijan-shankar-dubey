@@ -13,10 +13,8 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={`page ${styles["main-div"]}`} id="page">
-        {/* <MainLoader /> */}
         <video
           className={styles.background}
-          // controls={false}
           height="100%"
           width="100%"
           loop
