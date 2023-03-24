@@ -1,6 +1,7 @@
 import styles from "./header.module.scss";
 import MenuIcon from "@/utility/Menu-Icon/menuIcon";
 import { useState } from "react";
+import Link from "next/link";
 
 const Header = () => {
   const [showNavItems, setShowNavItems] = useState(false);
@@ -18,10 +19,32 @@ const Header = () => {
           }`}
         >
           <ul>
-            <li style={{ "--i": 1 }}>About</li>
-            <li style={{ "--i": 1.2 }}>home</li>
-            <li style={{ "--i": 1.4 }}>projects</li>
-            <li style={{ "--i": 1.5 }}>connect</li>
+            <li style={{ "--i": 1 }}>
+              <Link className={styles["nav-links"]} href={"/"}>
+                Home
+              </Link>
+            </li>
+            <li style={{ "--i": 1.2 }}>
+              <Link className={styles["nav-links"]} href={"/about"}>
+                About
+              </Link>
+            </li>
+
+            <li style={{ "--i": 1.4 }}>
+              <Link className={styles["nav-links"]} href={"/skills"}>
+                Skills
+              </Link>
+            </li>
+            <li style={{ "--i": 1.6 }}>
+              <Link className={styles["nav-links"]} href={"/projects"}>
+                Projects
+              </Link>
+            </li>
+            <li style={{ "--i": 1.8 }}>
+              <Link className={styles["nav-links"]} href={"/contact"}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

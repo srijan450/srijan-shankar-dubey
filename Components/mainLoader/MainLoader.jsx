@@ -7,22 +7,22 @@ const MainLoader = () => {
 
   useEffect(() => {
     Router.events.on("routeChangeStart", () => {
-      setloader(false);
+      setloader(true);
       console.log("start");
     });
     Router.events.on("routeChangeComplete", () => {
-      setloader(true);
+      setloader(false);
       console.log("end");
     });
     Router.events.on("routeChangeError", () => {
-      setLoading(false);
+      setloader(false);
       console.log("error");
     });
 
     return () => {
-      Router.events.off("routeChangeStart", () => setLoading(false));
-      Router.events.off("routeChangeComplete", () => setLoading(true));
-      Router.events.off("routeChangeError", () => setLoading(false));
+      Router.events.off("routeChangeStart", () => setloader(false));
+      Router.events.off("routeChangeComplete", () => setloader(true));
+      Router.events.off("routeChangeError", () => setloader(false));
     };
   }, [Router.events]);
 
