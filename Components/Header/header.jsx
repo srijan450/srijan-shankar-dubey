@@ -20,28 +20,32 @@ const Header = () => {
         >
           <ul>
             <li style={{ "--i": 1 }}>
-              <Link className={styles["nav-links"]} href={"/"}>
+              <Link className={styles["nav-links"]} href={"/"} as={"/"}>
                 Home
               </Link>
             </li>
             <li style={{ "--i": 1.2 }}>
-              <Link className={styles["nav-links"]} href={"/about"}>
+              <Link
+                className={styles["nav-links"]}
+                href={"/about"}
+                as={"/about"}
+              >
                 About
               </Link>
             </li>
 
             <li style={{ "--i": 1.4 }}>
-              <Link className={styles["nav-links"]} href={"/skills"}>
+              <Link className={styles["nav-links"]} href={"/skills"} as={"/skills"}>
                 Skills
               </Link>
             </li>
             <li style={{ "--i": 1.6 }}>
-              <Link className={styles["nav-links"]} href={"/projects"}>
+              <Link className={styles["nav-links"]} href={"/projects"} as={"/projects"}>
                 Projects
               </Link>
             </li>
             <li style={{ "--i": 1.8 }}>
-              <Link className={styles["nav-links"]} href={"/contact"}>
+              <Link className={styles["nav-links"]} href={"/contact"} as={"/contact"}>
                 Contact
               </Link>
             </li>
