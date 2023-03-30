@@ -1,0 +1,49 @@
+
+.button{
+    background: red;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--void);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 700;
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    background-size: 200% 100%;
+    text-transform: uppercase;
+    position: relative;
+  
+    &::after{
+      content: '\0279E';
+      display: inline-block;
+      margin-left: 10px;
+      -webkit-transition: transform 0.3s ease-out;
+            -moz-transition: transform 0.3s ease-out;
+            -ms-transition: transform 0.3s ease-out;
+            -o-transition: transform 0.3s ease-out;
+            transition: transform 0.3s ease-out;
+    }
+  
+    &:hover{
+      color: white;
+      background-position: left bottom;
+  
+      &:after{
+        -webkit-transform: translateX(6px);
+        -moz-transform: translateX(6px);
+        -ms-transform: translateX(6px);
+        -o-transform: translateX(6px);
+        transform: translateX(6px);
+      }
+    }
+  
+  }
+
+  @media screen and (max-width:500px) {
+    .button{
+        padding: 10px 20px;
+      font-size: 1rem;
+      }
+  }

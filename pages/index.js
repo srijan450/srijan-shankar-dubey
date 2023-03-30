@@ -1,4 +1,5 @@
 import Bot from "@/Components/EyeBot/Bot";
+import SuperButton from "@/utility/super-buttons/superButtons";
 import Typewritter from "@/utility/typewritter-effect/Main-Contents";
 import Head from "next/head";
 import Link from "next/link";
@@ -45,12 +46,8 @@ const Home = () => {
             and scalable websites with great user experience.
           </p>
           <div className={styles["button-container"]}>
-            <Link className={styles.button} href="/contact">
-              Contact me
-            </Link>
-            <Link className={styles.button} href="/about">
-              about me
-            </Link>
+            <SuperButton to={"/contact"} text={"Contact me"} />
+            <SuperButton to={"/about"} text={"about me"} />
           </div>
         </div>
         <div className={styles.bot}>
