@@ -1,9 +1,5 @@
 .main-container{
-    // width: 100vw;
-    max-height: 60vh;
-    display: flex;
-    // justify-content: center;
-    // position: relative;
+    max-height: 50vh;
     overflow: hidden;
     
 }
@@ -13,30 +9,30 @@
     height: 40px;
     overflow: hidden;
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     transition: all 800ms;
-    padding: 0px 10px;
+    padding: 0px 10px 0px 0px;
+  }
+   
+  .flex-col{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
   
   .div2{
     background: #2a2a2a;
     width: 40px;
-    height: inherit;
     writing-mode: vertical-lr;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 500ms;
-    padding: 30px 0px 10px 0px;
+    padding-bottom: 10px;
     overflow: hidden;
   }
-  
-  .flex-col{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-  }
+ 
   
   .div1 span, .div2 span{
     display: inline-block;
@@ -62,6 +58,6 @@
 
   @media screen and (max-width:500px) {
     .main-container{
-        max-height: 100vh;
+        max-height: 90vh;
     }
   }
