@@ -1,0 +1,82 @@
+.background{
+    // background: black url("../../public/muchwow\ __\ graphics.gif");
+    background-repeat: no-repeat;
+    // background-position: center;
+    background-size: cover;
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    user-select: none;
+  }
+
+  .content{
+    color: var(--stark);
+    height: 100vh;
+    width: 60%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 50px;
+  }
+
+  .clock{
+    width: 40%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .heading{
+    font-size: 4.5rem;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+  }
+
+  .text{
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .button-container{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0px;
+  }
+
+  @media screen and (max-width:500px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        padding: 60px 0px 0px 0px;
+        width: 100%;
+        min-height: 100vh;
+        height: max-content;
+        order: 1;
+      }
+      .clock{
+        display: flex;
+        order: 2;
+        width: 100vw;
+        height: max-content;
+        padding: 10% 0;
+        justify-content: center;
+        align-items: center;
+      }
+      .heading{
+        font-size: 3.5rem;
+      }
+
+  }

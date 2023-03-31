@@ -1,5 +1,5 @@
-import Bot from "@/Components/EyeBot/Bot";
-import SuperButton from "@/utility/super-buttons/superButtons";
+import Bot from "@/utility/EyeBot/Bot";
+import SuperButton from "@/Components/super-buttons/superButtons";
 import Typewritter from "@/utility/typewritter-effect/Main-Contents";
 import Head from "next/head";
 import Link from "next/link";

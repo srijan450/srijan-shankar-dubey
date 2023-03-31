@@ -1,6 +1,6 @@
 import Clock from "@/utility/clock/clock";
-import SuperButton_A from "@/utility/super-buttons/superButton2";
-import SuperButton from "@/utility/super-buttons/superButtons";
+import SuperButton_A from "@/Components/super-buttons/superButton2";
+import SuperButton from "@/Components/super-buttons/superButtons";
 import React from "react";
 import styles from "./About.module.scss";
 const About = () => {
