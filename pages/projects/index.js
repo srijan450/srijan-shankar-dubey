@@ -66,7 +66,14 @@ const Projects = () => {
         </div>
         <div className={styles.projects}>
           {dataset.map((item) => {
-            return <ProjectCard title={item.heading} imgURL={item.img} />;
+            return (
+              <ProjectCard
+                title={item.heading}
+                imgURL={item.img}
+                website={item.website}
+                github={item.github}
+              />
+            );
           })}
         </div>
       </section>

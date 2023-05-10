@@ -1,6 +1,14 @@
 import React, { useEffect } from "react";
 import styles from "./projectCard.module.scss";
-const ProjectCard = ({ title, imgURL, ribbon, ribbonitem }) => {
+import SuperButton4 from "../super-button-4";
+const ProjectCard = ({
+  title,
+  imgURL,
+  ribbon,
+  ribbonitem,
+  github,
+  website,
+}) => {
   useEffect(() => {
     const sx = document.querySelectorAll(`.${styles.card}`);
     sx.forEach((item, key) => {
@@ -23,8 +31,12 @@ const ProjectCard = ({ title, imgURL, ribbon, ribbonitem }) => {
 
       <img src={imgURL} alt="img" />
       <div className={styles.button}>
-        <button>View Project</button>
-        <button>Show Code</button>
+        {website && (
+          <SuperButton4 title="view project" property="link" link={website} />
+        )}
+        {github && (
+          <SuperButton4 title="show code" property="link" link={github} />
+        )}
       </div>
     </div>
   );

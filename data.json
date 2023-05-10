@@ -23,7 +23,7 @@
     {
         "heading": "mobile photography",
         "img": "./mobile-photography.png",
-        "website": "http://mobile-photography.great-site.net",
+        "website": "https://mobile-photography.great-site.net",
         "github": null,
         "categoies": ["all","php","codeignitor","mysql","full-stack"]
     },
@@ -37,7 +37,7 @@
     {
         "heading": "student management system",
         "img": "./student-management-system.png",
-        "website": "http://students-management-system.infinityfreeapp.com",
+        "website": "https://students-management-system.infinityfreeapp.com",
         "github": null,
         "categoies": ["all","php","mysql","full-stack","back-end"]
     },
