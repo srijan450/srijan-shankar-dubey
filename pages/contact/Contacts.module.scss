@@ -16,7 +16,7 @@
 
   .content{
     color: var(--stark);
-    height: 100vh;
+    min-height: 100vh;
     width: 60%;
     display: flex;
     justify-content: center;
