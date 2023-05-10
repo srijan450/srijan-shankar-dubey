@@ -31,9 +31,9 @@ const SkillMarquee = ({ children }) => {
   useEffect(() => {
     const div1 = document.querySelector(`.${styles.div1}`);
     const div2 = document.querySelector(`.${styles.div2}`);
-    // const arr = ["HTML","CSS","JavaScript","Jquery","SCSS","ReactJS","Bootstrap", "Material Ui","NPM","Yarn","SQL","NodeJS","ExpressJS","MongoDB","Python","Java","PHP","PostgresSQL","CodeIgnitor","React-Native","NextJS","MySQl","CPP"];
     const render1 = arr.slice(0, 15).map((item) => {
       const sp = document.createElement("span");
+      sp.classList.add(styles.moveLeft)
       sp.innerHTML = item;
       return sp;
     });
@@ -57,10 +57,6 @@ const SkillMarquee = ({ children }) => {
       render2.forEach((ele, key) => {
         div2.appendChild(ele);
       });
-      // if (div2.childNodes.includes(item))
-      //   div2.removeChild(item);
-
-      //   div1.removeChild(item2);
     }, 1000);
 
     return () => {

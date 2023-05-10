@@ -118,7 +118,7 @@ body {
 }
 
 .page-rotate{
-  transform: rotate(10deg);
+  transform: rotate(15deg);
   transform-origin: bottom left;
 }
 

@@ -1,7 +1,7 @@
 .menu{
 background-color: white;
 width: fit-content;
-padding: 3px 8px;
+padding: 8px 8px;
 cursor: pointer;
 z-index: 1000;
 user-select: none;
@@ -12,7 +12,7 @@ transition: all 1s;
 }
 
 .menu i{
-    width: 25px;
+    width: 30px;
     border: 2px solid red;
     display: block;
     margin: 4px;
@@ -32,17 +32,8 @@ transition: all 1s;
     transform: translate3d(0,4px ,0)
 }
 
-
-// .hover i:nth-child(1){
-//     transform: translate3d(0,10px ,0)
-// }
-
-// .hover i:last-child{
-//     transform: translate3d(0,-10px ,0)
-// }
-
 .click i:nth-child(1){
-    transform: translate(0, 10px) rotate(45deg);
+    transform: translate(0, 8px) rotate(45deg);
 }
 
 .click i:nth-child(2){
@@ -51,10 +42,10 @@ transition: all 1s;
 }
 
 .click i:last-child{
-    transform: translate(0,-4px) rotate(-45deg);
+    transform: translate(0,-6px) rotate(-45deg);
 }
 
 .click {
     transition: all 1s;
-    right: 140px;
+    right: 145px;
 }

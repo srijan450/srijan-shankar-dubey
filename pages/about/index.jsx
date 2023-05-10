@@ -3,6 +3,7 @@ import SuperButton_A from "@/Components/super-buttons/superButton2";
 import SuperButton from "@/Components/super-buttons/superButtons";
 import React from "react";
 import styles from "./About.module.scss";
+import RevolvingIcons from "@/utility/RevolvingIcons";
 const About = () => {
   return (
     <div className={styles.background}>
@@ -44,7 +45,8 @@ const About = () => {
           </div>
         </div>
         <div className={styles.clock}>
-          <Clock />
+          {/* <Clock /> */}
+          <RevolvingIcons />
         </div>
       </div>
     </div>

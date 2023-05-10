@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    background: var(--ink);
+    background: black;
     height: 100vh;
     width: 100vw;
     z-index: -2;
@@ -10,12 +10,11 @@
 
 
 .nav{
-    background: var(--jewel);
+    background: black;
     position: relative;
-    border: 1px solid white;
     width: 200px;
     height: 100vh;
-    padding: 20px 10px;
+    padding: 30px 10px 0px 0px;
     
 }
 .nav-items{
@@ -31,8 +30,7 @@
 
 .nav-items ul li{
     margin: 8px auto;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 
 .nav-items ul li:nth-child(n){
@@ -41,21 +39,6 @@
     transition: transform calc(var(--i)*0.8s);
 }
 
-
 .show-items ul li:nth-child(n){
     transform:translate(0px , 0px);
-}
-
-
-
-.nav-items ul li:hover{
-    transition: all 0.5s;
-    color: red;
-    transform: translateX(10px);
-}
-
-
-.nav-links{
-    color: var(--i);
-    text-decoration: none;
 }

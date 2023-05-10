@@ -1,7 +1,7 @@
+import { useState } from "react";
 import styles from "./header.module.scss";
 import MenuIcon from "@/utility/Menu-Icon/menuIcon";
-import { useState } from "react";
-import Link from "next/link";
+import NavigationButton from "../navigation-buttons";
 
 const Header = () => {
   const [showNavItems, setShowNavItems] = useState(false);
@@ -19,36 +19,11 @@ const Header = () => {
           }`}
         >
           <ul>
-            <li style={{ "--i": 1 }}>
-              <Link className={styles["nav-links"]} href={"/"} as={"/"}>
-                Home
-              </Link>
-            </li>
-            <li style={{ "--i": 1.2 }}>
-              <Link
-                className={styles["nav-links"]}
-                href={"/about"}
-                as={"/about"}
-              >
-                About
-              </Link>
-            </li>
-
-            <li style={{ "--i": 1.4 }}>
-              <Link className={styles["nav-links"]} href={"/skills"} as={"/skills"}>
-                Skills
-              </Link>
-            </li>
-            <li style={{ "--i": 1.6 }}>
-              <Link className={styles["nav-links"]} href={"/projects"} as={"/projects"}>
-                Projects
-              </Link>
-            </li>
-            <li style={{ "--i": 1.8 }}>
-              <Link className={styles["nav-links"]} href={"/contact"} as={"/contact"}>
-                Contact
-              </Link>
-            </li>
+            <NavigationButton title={"home"} intime={1} />
+            <NavigationButton title={"about"} intime={1.2} />
+            <NavigationButton title={"skills"} intime={1.4} />
+            <NavigationButton title={"projects"} intime={1.6} />
+            <NavigationButton title={"contact"} intime={1.8} />
           </ul>
         </div>
       </nav>
