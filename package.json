@@ -1,8 +1,8 @@
 {
-  "name": "client",
+  "name": "my-portfolio-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://srijan450.github.io/my-app", 
+  "homepage": "http://srijan450.github.io/srijan-shankar-dubey", 
   "scripts": {
     "dev": "next dev",
     "build": "next build",
