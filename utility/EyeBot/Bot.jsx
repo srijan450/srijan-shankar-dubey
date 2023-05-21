@@ -4,7 +4,7 @@ const Bot = () => {
   useEffect(() => {
     const balls = document.getElementsByClassName(styles.balls);
     const handleMouseMove = () => {
-      const x = (event.clientX * 100) / window.innerWidth + "%";
+      const x = (event.clientX * 90) / window.innerWidth + "%";
       const y = (event.clientY * 70) / window.innerHeight + "%";
       for (let i = 0; i < 2; i++) {
         balls[i].style.left = x / 2;

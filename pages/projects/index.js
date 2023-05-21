@@ -5,6 +5,7 @@ import ProjectCard from "@/Components/project-card/ProjectCard";
 import data from "../../data.json";
 import ProjectLoader from "@/Components/project-loader";
 import filters from "./_filter.json";
+import PageNavigator from "@/Components/page-navigation";
 
 const Projects = () => {
   const [dataset, setdataset] = useState(data);
@@ -36,6 +37,7 @@ const Projects = () => {
 
   return (
     <>
+      <PageNavigator prev={"skills"} prevLink={"/skills"} next={"skills"} nextLink={"/skills"}/>
       <ProjectLoader title={loader.title} />
       <section className={styles.content}>
         <h2 className={styles.heading}>Work & Projects</h2>

@@ -1,0 +1,18 @@
+.activeUsers{
+    user-select: none;
+    z-index: 0;
+    background: #404040;
+    padding: 10px 30px;
+    border-radius: 20px;
+text-transform: lowercase;
+    font-size: 20px;
+    color: #3EDAD8;
+    font-weight: 700;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+.activeUsers:hover{
+    background: transparent;
+}

@@ -1,13 +1,16 @@
 import styles from "./superbutton4.module.scss";
 
 const SuperButton4 = ({
-  color = "#08fdd8",
+  color = "#3EDAD8",
   background = "black",
   overlaycolor = "white",
   title = "send message!",
   property = "button",
   position = "end",
   link,
+  name,
+  type = "button",
+  showLoader = false,
 }) => {
   return (
     <div className={styles.container} style={{ textAlign: position }}>
@@ -19,8 +22,16 @@ const SuperButton4 = ({
             "--color": color,
             "--overlaycolor": overlaycolor,
           }}
+          name={name}
+          type={type}
+          disabled={showLoader}
         >
-          {title}
+          {!showLoader && title}{" "}
+          {showLoader && (
+            <>
+              sending... <span className={styles.loader}></span>
+            </>
+          )}
         </button>
       ) : (
         <a

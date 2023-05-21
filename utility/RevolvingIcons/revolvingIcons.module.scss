@@ -10,7 +10,7 @@
     --radius: 200px;
     width: calc(2 * var(--radius));
     height: calc(2 * var(--radius));
-    background-color: #515151;
+    background-color: #404040;
     border-radius: 50%;
     display: grid;
     z-index: 0;
@@ -27,7 +27,7 @@
     }
 }
 .glow{
-    --neon-glow: #4003e6;
+    --neon-glow: #3EDAD8;
 }
 .item {
     
@@ -37,7 +37,8 @@
     background-color: var(--neon-glow);
     display: grid;
     place-items: center;
-    color: white;
+    line-height: 40px;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     border-radius: 50%;

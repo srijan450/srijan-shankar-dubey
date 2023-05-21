@@ -5,9 +5,11 @@ import React from "react";
 import styles from "./Skills.module.scss";
 import Skillset from "@/utility/skill-set-meter/skillset";
 import SkillMarquee from "@/utility/skills-left-container/skillsContainer";
+import PageNavigator from "@/Components/page-navigation";
 const About = () => {
   return (
     <div className={styles.background}>
+      <PageNavigator next={"projects"} nextLink={"/projects"} prev={"home"} prevLink={"/"}/>
       <div className={styles.row}>
         <div className={styles.content}>
           <h1 className={styles.heading}>Skills & Experience</h1>

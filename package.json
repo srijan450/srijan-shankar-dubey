@@ -2,14 +2,14 @@
   "name": "my-portfolio-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://srijan450.github.io/srijan-shankar-dubey", 
+  "homepage": "http://srijan450.github.io/srijan-shankar-dubey",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d .next"
+    "deploy": "gh-pages -d .next"
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
@@ -17,6 +17,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.59.3",
+    "socket.io-client": "^4.6.1",
     "typewriter-effect": "^2.19.0"
   }
 }

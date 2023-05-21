@@ -2,8 +2,9 @@ import Head from "next/head";
 import React from "react";
 import Header from "../Header/header";
 import MainLoader from "../mainLoader/MainLoader";
+import ActiveUsers from "@/utility/activeUsers";
 
-const Layout = ({ children }) => {
+const Layout = ({ count,children }) => {
   return (
     <>
       <Head>
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
       <main className={`page main-div`} id="page">
         {children}
       </main>
+      <ActiveUsers count={count} />
     </>
   );
 };

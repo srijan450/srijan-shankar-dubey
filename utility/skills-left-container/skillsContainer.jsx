@@ -33,8 +33,9 @@ const SkillMarquee = ({ children }) => {
     const div2 = document.querySelector(`.${styles.div2}`);
     const render1 = arr.slice(0, 15).map((item) => {
       const sp = document.createElement("span");
-      sp.classList.add(styles.moveLeft)
       sp.innerHTML = item;
+      sp.classList.add(styles.moveLeft);
+
       return sp;
     });
 
@@ -46,6 +47,7 @@ const SkillMarquee = ({ children }) => {
 
     var SI = setInterval(() => {
       const item = render1.shift();
+
       render2.unshift(item);
       const item2 = render2.pop();
       render1.push(item2);
@@ -66,7 +68,6 @@ const SkillMarquee = ({ children }) => {
   return (
     <div className={styles["main-container"]}>
       <div className={styles.div1}></div>
-
       <div className={styles["flex-col"]}>
         <div className={styles.div2}></div>
         <div className={styles.div3}>{children}</div>

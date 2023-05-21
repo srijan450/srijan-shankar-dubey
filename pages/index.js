@@ -4,10 +4,12 @@ import Typewritter from "@/utility/typewritter-effect/Main-Contents";
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.scss";
+import PageNavigator from "@/Components/page-navigation";
 
 const Home = () => {
   return (
     <>
+      <PageNavigator prev={false} prevLink={""} next={"about"} nextLink={"/about"}/>
       <video
         className={"background"}
         height="100%"

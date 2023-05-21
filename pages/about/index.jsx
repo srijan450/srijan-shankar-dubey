@@ -4,9 +4,16 @@ import SuperButton from "@/Components/super-buttons/superButtons";
 import React from "react";
 import styles from "./About.module.scss";
 import RevolvingIcons from "@/utility/RevolvingIcons";
+import PageNavigator from "@/Components/page-navigation";
 const About = () => {
   return (
     <div className={styles.background}>
+      <PageNavigator
+        next={"skills"}
+        nextLink={"/skills"}
+        prev={"home"}
+        prevLink={"/"}
+      />
       <div className={styles.row}>
         <div className={styles.content}>
           <h1 className={styles.heading}>I, Me & Myself</h1>
