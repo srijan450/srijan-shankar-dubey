@@ -4,9 +4,9 @@
     background: #404040;
     padding: 10px 30px;
     border-radius: 20px;
-text-transform: lowercase;
     font-size: 20px;
     color: #3EDAD8;
+    width: fit-content;
     font-weight: 700;
     position: fixed;
     bottom: 10px;
@@ -15,4 +15,20 @@ text-transform: lowercase;
 
 .activeUsers:hover{
     background: transparent;
+}
+
+@media screen and (max-width:740px) {
+    .activeUsers{
+        width: fit-content;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .activeUsers{
+        font-size: 15px;
+        padding: 10px 10px;       
+    }
 }

@@ -6,6 +6,7 @@ import data from "../../data.json";
 import ProjectLoader from "@/Components/project-loader";
 import filters from "./_filter.json";
 import PageNavigator from "@/Components/page-navigation";
+import Link from "next/link";
 
 const Projects = () => {
   const [dataset, setdataset] = useState(data);
@@ -37,7 +38,12 @@ const Projects = () => {
 
   return (
     <>
-      <PageNavigator prev={"skills"} prevLink={"/skills"} next={"skills"} nextLink={"/skills"}/>
+      <PageNavigator
+        prev={"home"}
+        prevLink={"/"}
+        next={"skills"}
+        nextLink={"/skills"}
+      />
       <ProjectLoader title={loader.title} />
       <section className={styles.content}>
         <h2 className={styles.heading}>Work & Projects</h2>
@@ -47,7 +53,7 @@ const Projects = () => {
           my latest web software development portfolio projects.
         </p>
 
-        <div>
+        <div className={styles.buttonset}>
           {filters.map((item, key) => {
             return (
               <SuperButton3
@@ -60,10 +66,10 @@ const Projects = () => {
           })}
         </div>
         <div>
-          <p>
+          <p className={styles.text}>
             {activestate.category === "all"
-              ? "Showing All Projects."
-              : `Showing Projects Filtered By ${activestate.title}`}
+              ? "Showing All Projects. Use the filter to list them by skills or technology."
+              : `Showing Projects Filtered By ${activestate.title}.`}
           </p>
         </div>
         <div className={styles.projects}>
@@ -77,6 +83,24 @@ const Projects = () => {
               />
             );
           })}
+        </div>
+        <div className={styles.contact}>
+          <h1>Lets talk</h1>
+          <p className={styles.text}>
+            Wanna get in touch or talk about a project?
+          </p>
+          <p className={styles.text}>
+            feel free to contact me via email{" "}
+            <a href="mailto:srijanshankardubey99@gmail.com">
+              srijanshankardubey99@gmail.com
+            </a>
+          </p>
+          <p className={styles.text}>
+            or drop a line in the form at the{" "}
+            <Link href={"/contact"} as={"/contact"}>
+              contact
+            </Link>
+          </p>
         </div>
       </section>
     </>

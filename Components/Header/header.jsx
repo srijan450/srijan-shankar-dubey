@@ -2,32 +2,63 @@ import { useState } from "react";
 import styles from "./header.module.scss";
 import MenuIcon from "@/utility/Menu-Icon/menuIcon";
 import NavigationButton from "../navigation-buttons";
+import Head from "next/head";
 
 const Header = () => {
   const [showNavItems, setShowNavItems] = useState(false);
   return (
-    <div className={styles["nav-container"]}>
-      <nav
-        className={`${styles.nav} ${
-          showNavItems ? styles["show-nav-animation"] : ""
-        }`}
-      >
-        <MenuIcon showNavItems={setShowNavItems} />
-        <div
-          className={`${styles["nav-items"]} ${
-            showNavItems ? styles["show-items"] : ""
+    <>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        ></link>
+      </Head>
+
+      <div className={styles["nav-container"]}>
+        <nav
+          className={`${styles.nav} ${
+            showNavItems ? styles["show-nav-animation"] : ""
           }`}
         >
-          <ul>
-            <NavigationButton title={"home"} intime={1} />
-            <NavigationButton title={"about"} intime={1.2} />
-            <NavigationButton title={"skills"} intime={1.4} />
-            <NavigationButton title={"projects"} intime={1.6} />
-            <NavigationButton title={"contact"} intime={1.8} />
-          </ul>
-        </div>
-      </nav>
-    </div>
+          <MenuIcon showNavItems={setShowNavItems} />
+          <div
+            className={`${styles["nav-items"]} ${
+              showNavItems ? styles["show-items"] : ""
+            }`}
+          >
+            <ul>
+              <NavigationButton title={"home"} intime={1} />
+              <NavigationButton title={"about"} intime={1.2} />
+              <NavigationButton title={"skills"} intime={1.4} />
+              <NavigationButton title={"projects"} intime={1.6} />
+              <NavigationButton title={"contact"} intime={1.8} />
+            </ul>
+          </div>
+          <div>
+            <div className={styles.divider}>
+              <span className={styles.span}>Quick contact</span>
+            </div>
+            <div className={styles.quickContacts}>
+              <ul>
+                <li>
+                  <a href="https://github.com/srijan450" target="_blank">
+                    <i class="devicon-github-original"></i>
+                  </a>
+                </li>
+                <li>
+                <a href="mailto:srijanshankardubey99@gmail.com"><i class="devicon-google-plain"></i></a>
+                  
+                </li>
+                <li>
+                <a href="https://www.linkedin.com/in/srijan-shankar-dubey-140bb920b/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </>
   );
 };
 

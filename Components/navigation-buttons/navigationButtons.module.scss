@@ -1,7 +1,7 @@
 
 .button{
     display: block;
-    padding: 8px 5px;
+    
     background-color: #313131;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
@@ -71,13 +71,16 @@
 
   .button .span{
     color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 8px 5px;
     text-decoration: none;
     position: relative;
     display: block;
     z-index: 2;
   }
 
-  @media screen and (max-width:500px) {
+  @media screen and (max-width:740px) {
     .button{
         padding: 10px 20px;
       font-size: 1rem;

@@ -5,6 +5,7 @@
   width: 100vw;
   position: fixed;
   user-select: none;
+  
 }
 
 .content{
@@ -14,11 +15,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0px;
-  margin-left: 120px;
 }
 .bot{
-  width: 50%;
   height: 100%;
 }
 .split-text{
@@ -27,30 +25,23 @@
 }
 
 .text-name{
-  font-size: 5rem;
-  line-height: 4.5rem;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 
 .text-hello{
-  font-size: 2rem;
-  line-height: 4rem;
   word-spacing: .5rem;
 }
 
 .text-about{
-  font-size: 3rem;
   margin-top: 30px;
-  // line-height: 5rem;
   word-spacing: .5rem;
 }
 
 
 .text-paragraph{
-  font-size: 2rem;
-  line-height: 2rem;
+
   font-weight: 500;
   text-align: justify;
   word-wrap: break-word;
@@ -71,21 +62,18 @@
 }
 
 
-@media screen and (max-width:500px) {
+
+
+@media screen and (max-width:740px) {
   .row{
-    // grid-template-columns: 1fr;
     display: flex;
     width: 100vw;
     min-height: 100vh;
-  flex-direction: column;
-  
+    flex-direction: column;  
   }
   .content{
-    padding: 20px;
+    padding: 15px;
     width: 100%;
-    // height: max-content;
-    // order: 2;
-    // justify-content: flex-start;
   }
   .bot{
     display: none;
@@ -108,4 +96,127 @@
     font-size: 1.5rem;
   }
  
+ 
+}
+
+@media screen and (max-width:350px) {
+  .content{
+    height: auto;
+    padding: 80px 10px;  
+    text-align: center;
+  }
+  .text-hello{
+    margin-bottom: 10px;
+  }
+  .text-name{
+    line-height: 25px;
+  }
+  .text-about{
+    line-height: 20px;
+    text-align: left;
+    min-height: 40px;
+    margin-top: 20px;
+  }
+  .text-paragraph{
+    word-spacing: .3rem;
+  }
+  .button-container{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  .row{
+    min-height: 100vh;
+    padding: 0px 10px 0px 20px;
+  }
+  .content{
+    height: 100%;
+    padding: 60px 0px;  
+    margin-left: 0px;
+  }
+  .text-hello{
+    font-size: 1.8rem;
+  }
+  .text-name{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .text-about{
+    margin-top: 20px;
+    font-size: 2rem;
+    // line-height: 30px;
+  }
+  .text-paragraph{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .button-container{
+    margin: 3rem 0px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .row{
+    min-height: 100vh;
+    // padding: 0px 10px 0px 20px;
+    padding: 0px 50px;
+  }
+  .content{
+    height: 100%;
+  }
+  .text-hello{
+    font-size: 1.8rem;
+  }
+  .text-name{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .text-about{
+    margin-top: 20px;
+    font-size: 2rem;
+    // line-height: 30px;
+  }
+  .text-paragraph{
+    font-size: 1.8rem;
+  }
+  .button-container{
+    margin: 3rem 0px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .background{
+    
+  }
+  .row{
+    height: 100vh;
+    padding: 0px 120px;
+  }
+  .content{
+    height: 100%;
+    // border: 1px solid;
+  }
+  .text-hello{
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  .text-name{
+  font-size: 5rem;
+  line-height: 4.5rem;
+  }
+  .text-about{
+    margin-top: 30px;
+    
+  font-size: 3rem;
+  line-height: 5rem;
+    // line-height: 30px;
+  }
+  .text-paragraph{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .button-container{
+    margin: 20px 0px;
+  }
 }

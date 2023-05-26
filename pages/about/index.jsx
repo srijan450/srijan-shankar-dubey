@@ -7,7 +7,7 @@ import RevolvingIcons from "@/utility/RevolvingIcons";
 import PageNavigator from "@/Components/page-navigation";
 const About = () => {
   return (
-    <div className={styles.background}>
+    <section className={styles.background}>
       <PageNavigator
         next={"skills"}
         nextLink={"/skills"}
@@ -56,7 +56,7 @@ const About = () => {
           <RevolvingIcons />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

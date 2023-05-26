@@ -4,12 +4,6 @@ import Head from "next/head";
 const RevolvingIcons = () => {
   return (
     <>
-      <Head>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-        ></link>
-      </Head>
       <div className={styles.container}>
         <div className={styles.circle} style={{ "--total": 14 }}>
           <div className={`${styles.item} ${styles.glow}`} style={{ "--i": 1 }}>

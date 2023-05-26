@@ -114,13 +114,13 @@ body {
   background: white;
   opacity: 1;
   transform: rotate(0deg);
-  transform-origin: bottom left;
+  transform-origin: left;
   transition: transform 1s;
 }
 
 .page-rotate{
-  transform: rotate(15deg);
-  transform-origin: bottom left;
+  transform: perspective(5000px) rotateY(20deg);
+  transform-origin: left;
 }
 
 .main-div{
@@ -140,10 +140,14 @@ body {
   object-fit: cover;
 }
 
-
+.background{
+  left: 0;
+  top: 0;
+}
 
 .Typewriter{
-  display: inline-block;
+  display: inline;
+  font-weight: 800;
 }
 
 
@@ -170,14 +174,56 @@ a {
   }
 } */
 
-@media screen and (max-width:500px) {
+  
+
+
+@media screen and (max-width:450px) {
 .page-rotate{
-  transform: rotate(40deg);
+  
+  transform: perspective(1000px) rotateY(60deg);
 }
 
-.background{
-  left: 0;
-  top: 0;
+
 }
-    
+
+@media screen and (max-width:450px) {
+  .page-rotate{
+    transform: perspective(1500px) rotateY(65deg);
+  }
 }
+
+@media screen and (min-width:450px) {
+  .page-rotate{
+    transform: perspective(2000px) rotateY(50deg);
+  }
+  }
+
+  @media screen and (min-width:600px) {
+    .page-rotate{
+      transform: perspective(3000px) rotateY(44deg);
+    }
+    }
+
+    @media only screen and (min-width: 740px) {
+      .page-rotate{
+        transform: perspective(3000px) rotateY(36deg);
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .page-rotate{
+        transform: perspective(5000px) rotateY(30deg);
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      .page-rotate{
+        transform: perspective(5000px) rotateY(20deg);
+      }
+    }
+/* @media screen and (max-width:380px) {
+  .page-rotate{
+    transform: perspective(1000px) rotateY(60deg);
+  }
+} */
+

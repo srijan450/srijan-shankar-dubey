@@ -1,7 +1,5 @@
 import Clock from "@/utility/clock/clock";
-import SuperButton_A from "@/Components/super-buttons/superButton2";
-import SuperButton from "@/Components/super-buttons/superButtons";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import styles from "./Contacts.module.scss";
 import SuperButton4 from "@/Components/super-button-4";
 import PageNavigator from "@/Components/page-navigation";
@@ -95,8 +93,8 @@ const Contact = () => {
   return (
     <section className={styles.background}>
       <PageNavigator
-        prev={"skills"}
-        prevLink={"/skills"}
+        prev={"home"}
+        prevLink={"/"}
         next={"skills"}
         nextLink={"/skills"}
       />
