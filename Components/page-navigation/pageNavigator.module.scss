@@ -1,5 +1,5 @@
 .page-nav{
-   position: relative;
+position: relative;
    z-index: 1;
 }
 
@@ -170,7 +170,7 @@
 
 }
 
-@media screen and (max-width:740px) {
+@media screen and (max-width:680px) {
     .page-nav{
         display: none;
     }

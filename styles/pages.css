@@ -1,0 +1,236 @@
+
+.pages{
+    background-color: black;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 100%;
+    padding: 0px 120px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    color: var(--stark);
+    width: 60%;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.heading{
+    font-size: 4.5rem;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
+    color: var(--stark);
+    margin-bottom: 1.5rem;
+}
+
+.heading2{
+    display: none;
+}
+
+.text{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 350px) {
+    .pages{
+        padding: 60px 0px;
+    }
+    .main{
+        padding: 0px 10px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .left{
+        order: 2;
+        width: 100%;
+    }
+    .right{
+        order: 1;
+        padding: 60px;
+    }
+    .heading{
+        display: none;
+        margin-bottom: 0;
+        font-size: 2.5rem;
+    }
+    .heading2{
+        display: block;
+
+    }
+    .text{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 350px) {
+    .pages{
+        padding: 60px 0px;
+    }
+    .main{
+        padding: 0px 20px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    
+    .left{
+        order: 2;
+        width: 100%;
+    }
+    .right{
+        order: 1;
+        padding: 60px;
+    }
+    .heading{
+        display: none;
+        margin-bottom: 0;
+        font-size: 3.3rem;
+    }
+    .heading2{
+        display: block;
+
+    }
+    .text{
+        font-size: 1.3rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 681px) {
+    .pages{
+        padding: 60px 0px;
+    }
+    .main{
+        padding: 0px 110px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .left{
+        order: 2;
+        width: 100%;
+    }
+    .right{
+        order: 1;
+        padding: 60px;
+    }
+    .heading{
+        display: none;
+        margin-bottom: 0;
+        font-size: 3.8rem;
+    }
+    .heading2{
+        display: block;
+        /* text-align: center; */
+    }
+    .text{
+        font-size: 1.3rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .pages{
+        padding: 60px 0px;
+    }
+    .main{
+        padding: 0px 110px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .left{
+        order: 2;
+        width: 100%;
+    }
+    .right{
+        order: 1;
+        padding: 60px;
+    }
+    .heading{
+        display: none;
+        margin-bottom: 0;
+        font-size: 3.8rem;
+    }
+    .heading2{
+        display: block;
+        /* text-align: center; */
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .pages{
+        padding: 60px 0px;
+    }
+    .main{
+        padding: 0px 110px;
+    }
+    .row{
+        flex-direction: row;
+    }
+    .left{
+        width: 60%;
+        order: 1;
+    }
+    .heading{
+        font-size: 4rem;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+    .heading2{
+        display: none;
+    }
+    .right{
+        width: 35%;
+        order: 2;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .main{
+        width: 100%;
+        padding: 0px 120px;
+    }
+    .heading{
+        font-size: 4.5rem;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+    .heading2{
+        display: none;
+    }
+    .left{
+        width: 60%;
+        /* width: auto; */
+    }
+    .right{
+        width: 35%;
+    }
+}

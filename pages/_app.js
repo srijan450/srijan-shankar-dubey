@@ -2,6 +2,7 @@ import Header from "@/Components/Header/header";
 import MainLoader from "@/Components/mainLoader/MainLoader";
 import Layout from "@/Components/pageLayout";
 import "@/styles/globals.css";
+import "@/styles/pages.css";
 import { useEffect, useState } from "react";
 import io from "socket.io-client";
 export default function App({ Component, pageProps }) {

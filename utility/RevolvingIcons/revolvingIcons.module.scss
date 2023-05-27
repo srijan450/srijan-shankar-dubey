@@ -1,10 +1,9 @@
 
 .container{
-    background: black;
-    height: 100vh;
-    // width: fit-content;
-    display: grid;
-    place-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // height: fit-content;
 }
 .circle{
     --radius: 200px;
@@ -35,8 +34,9 @@
     width: 40px;
     height: 40px;
     background-color: var(--neon-glow);
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: 40px;
     color: black;
     font-weight: bold;
@@ -124,5 +124,130 @@
     }
     100%{
         filter: drop-shadow(-3px 0px 1px #fefefe98);
+    }
+}
+
+// @media only screen and (max-width: 740px) {
+//     .container{
+        
+//     }
+//     .circle{
+//         --radius: 150px
+//     }
+//     .item {
+//         height: 30px;
+//         width: 30px;
+//         font-size: 15px;
+//     }
+// }
+
+
+// @media only screen and (max-width: 350px) {
+//     .container{
+        
+        
+//     }
+//     .circle{
+//         --radius: 100px
+//     }
+//     .item {
+//         height: 20px;
+//         width: 20px;
+//         font-size: 10px;
+//     }
+// }
+
+// @media only screen and (min-width: 768px) {
+//     .container{
+//         // padding: 90px 0px 0px 0px;
+        
+//     }
+//     .circle{
+//         --radius: 200px
+//     }
+//     .item {
+//         height: 40px;
+//         width: 40px;
+//         font-size: 18px;
+//     }
+// }
+@media only screen and (max-width: 300px) {
+    .circle{
+        --radius: 100px
+    }
+    .item {
+        height: 20px;
+        width: 20px;
+        font-size: 10px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 300px) {
+    .circle{
+        --radius: 140px
+    }
+    .item {
+        height: 28px;
+        width: 28px;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 430px) {
+    .circle{
+        --radius: 170px
+    }
+    .item {
+        height: 34px;
+        width: 34px;
+        font-size: 17px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 540px) {
+    .circle{
+        --radius: 200px
+    }
+    .item {
+        height: 40px;
+        width: 40px;
+        font-size: 18px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .circle{
+        --radius: 200px
+    }
+    .item {
+        height: 40px;
+        width: 40px;
+        font-size: 18px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+            .circle{
+                --radius: 130px
+            }
+            .item {
+                height: 30px;
+                width: 30px;
+                font-size: 15px;
+            }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .circle{
+        --radius: 180px
+    }
+    .item {
+        height: 40px;
+        width: 40px;
+        font-size: 18px;
     }
 }
