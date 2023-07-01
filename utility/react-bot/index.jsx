@@ -47,9 +47,10 @@ const ReactBot = () => {
           </button>
 
           <picture className={styles.picture}>
-            <source srcset="./mascot-000.avif" />
+            <source type="image/avif" srcset="./mascot-000.avif" />
+            <source type="image/png" srcset="./mascot-000.png" />
             <img
-              src="./mascot-000.avif"
+              src="./mascot-000.png"
               className={`${styles.picture} ${styles.imgs}`}
               style={{
                 opacity: 1,
@@ -59,9 +60,10 @@ const ReactBot = () => {
             />
           </picture>
           <picture className={styles.picture}>
-            <source srcset="./mascot-001.avif" />
+            <source type="image/avif" srcset="./mascot-001.avif" />
+            <source type="image/png" srcset="./mascot-001.png" />
             <img
-              src="./mascot-001.avif"
+              src="./mascot-001.png"
               className={`${styles.picture} ${styles.classuni} ${styles.imgs}`}
               style={{
                 opacity: 1,
@@ -71,9 +73,10 @@ const ReactBot = () => {
             />
           </picture>
           <picture className={styles.picture}>
-            <source srcset="./mascot-010.avif" />
+            <source type="image/avif" srcset="./mascot-010.avif" />
+            <source type="image/png" srcset="./mascot-010.png" />
             <img
-              src="./mascot-010.avif"
+              src="./mascot-010.png"
               className={`${styles.picture} ${styles.classuni} ${styles.imgs}`}
               style={{
                 opacity: 1,
@@ -83,9 +86,10 @@ const ReactBot = () => {
             />
           </picture>
           <picture className={styles.picture}>
-            <source srcset="./mascot-100.avif" />
+            <source type="image/avif" srcset="./mascot-100.avif" />
+            <source type="image/png" srcset="./mascot-100.png" />
             <img
-              src="./mascot-100.avif"
+              src="./mascot-100.png"
               className={`${styles.picture} ${styles.classuni} ${styles.imgs}`}
               style={{
                 opacity: 1,
