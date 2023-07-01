@@ -21,7 +21,7 @@ const Home = () => {
         autoPlay
         muted
       >
-        <source type="video/mp4" src={"./black-circle.mp4"} />
+        <source type="video/mp4" src={"https://srijan450.github.io/srijan-shankar-dubey/black-circle.mp4"} />
       </video>
 
       <section className="pages">
