@@ -1,6 +1,5 @@
 import SuperButton_A from "@/Components/super-buttons/superButton2";
 import SuperButton from "@/Components/super-buttons/superButtons";
-import React from "react";
 import styles from "./About.module.scss";
 import RevolvingIcons from "@/utility/RevolvingIcons";
 import PageNavigator from "@/Components/page-navigation";
@@ -18,7 +17,7 @@ const About = () => {
           <h1 className="heading heading2">I, Me & Myself</h1>
           <div className="row">
             <div className="left">
-              <div>
+              <>
                 <h1 className="heading">I, Me & Myself</h1>
                 <p className="text">
                   I am an innovative and creative web developer from India. I
@@ -50,9 +49,9 @@ const About = () => {
                     to={"https://bit.ly/srijan_resume"}
                   />
                 </div>
-              </div>
+              </>
             </div>
-            <div className="right">
+            <div className={`right ${styles.right}`}>
               <RevolvingIcons />
             </div>
           </div>

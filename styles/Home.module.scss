@@ -1,27 +1,7 @@
-
-.row{
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  position: fixed;
-  user-select: none;
-  
-}
-
-.content{
-  color: var(--stark);
-  height: 100vh;
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.bot{
-  height: 100%;
-}
 .split-text{
   display: block;
   font-family: 'Alegreya Sans', sans-serif;
+  
 }
 
 .text-name{
@@ -58,58 +38,53 @@
   display: flex; 
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px 0px;
+  padding: 0rem 0;
 }
 
 
 
-
-@media screen and (max-width:740px) {
-  .row{
-    display: flex;
-    width: 100vw;
-    min-height: 100vh;
-    flex-direction: column;  
-  }
-  .content{
-    padding: 15px;
-    width: 100%;
-  }
-  .bot{
-    display: none;
-  }
-  .text-name{
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-
-  .text-hello{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .text-about{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .text-paragraph{
-    font-size: 1.5rem;
-  }
- 
- 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 430px) {
+.button-container{
+  flex-direction: column;
 }
+}
+
+// @media screen and (max-width:740px) {
+//   .right{
+//     padding: 0px;
+//   }
+//   .text-name{
+//     font-size: 2rem;
+//     line-height: 2.5rem;
+//   }
+
+//   .text-hello{
+//     font-size: 1rem;
+//     line-height: 1.5rem;
+//   }
+
+//   .text-about{
+//     font-size: 1.5rem;
+//     line-height: 2rem;
+//   }
+//   .text-paragraph{
+//     font-size: 1.5rem;
+//   }
+ 
+ 
+// }
+
 
 @media screen and (max-width:350px) {
-  .content{
-    height: auto;
-    padding: 80px 10px;  
-    text-align: center;
-  }
   .text-hello{
     margin-bottom: 10px;
   }
   .text-name{
     line-height: 25px;
+  }
+  .right{
+    display: none;
   }
   .text-about{
     line-height: 20px;
@@ -120,20 +95,24 @@
   .text-paragraph{
     word-spacing: .3rem;
   }
+  
+.button-container{
+  margin: 3rem 0px;
+}
+}
+@media only screen and (min-width: 350px) {
+  .right{
+    // display: none;
+    padding: 0
+  }
   .button-container{
-    flex-direction: column;
+    margin: 3rem 0px;
   }
 }
 
 @media only screen and (min-width: 740px) {
-  .row{
-    min-height: 100vh;
-    padding: 0px 10px 0px 20px;
-  }
-  .content{
-    height: 100%;
-    padding: 60px 0px;  
-    margin-left: 0px;
+  .right{
+    display: block;
   }
   .text-hello{
     font-size: 1.8rem;
@@ -145,7 +124,6 @@
   .text-about{
     margin-top: 20px;
     font-size: 2rem;
-    // line-height: 30px;
   }
   .text-paragraph{
     font-size: 2rem;
@@ -157,13 +135,8 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .row{
-    min-height: 100vh;
-    // padding: 0px 10px 0px 20px;
-    padding: 0px 50px;
-  }
-  .content{
-    height: 100%;
+  .right{
+    padding: 60px;
   }
   .text-hello{
     font-size: 1.8rem;
@@ -186,16 +159,8 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .background{
-    
-  }
-  .row{
-    height: 100vh;
-    padding: 0px 120px;
-  }
-  .content{
-    height: 100%;
-    // border: 1px solid;
+  .right{
+    padding: 0;
   }
   .text-hello{
     font-size: 2rem;

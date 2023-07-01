@@ -2,8 +2,13 @@
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 3rem;
-    // margin: 20px 0px;
+    padding: 3rem 0;
+  }
+
+  @media only screen and (min-width: 350px) {
+    .right{
+      padding: 60px;
+    }
   }
 
 

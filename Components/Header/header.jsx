@@ -3,8 +3,10 @@ import styles from "./header.module.scss";
 import MenuIcon from "@/utility/Menu-Icon/menuIcon";
 import NavigationButton from "../navigation-buttons";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const router = useRouter();
   const [showNavItems, setShowNavItems] = useState(false);
   return (
     <>
@@ -28,11 +30,11 @@ const Header = () => {
             }`}
           >
             <ul>
-              <NavigationButton title={"home"} intime={1} />
-              <NavigationButton title={"about"} intime={1.2} />
-              <NavigationButton title={"skills"} intime={1.4} />
-              <NavigationButton title={"projects"} intime={1.6} />
-              <NavigationButton title={"contact"} intime={1.8} />
+              <NavigationButton title={"home"} intime={1} active={router.asPath==="/"}/>
+              <NavigationButton title={"about"} intime={1.2} active={router.asPath==="/about"}/>
+              <NavigationButton title={"skills"} intime={1.4} active={router.asPath==="/skills"}/>
+              <NavigationButton title={"projects"} intime={1.6} active={router.asPath==="/projects"}/>
+              <NavigationButton title={"contact"} intime={1.8} active={router.asPath==="/contact"}/>
             </ul>
           </div>
           <div>
@@ -47,11 +49,17 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                <a href="mailto:srijanshankardubey99@gmail.com"><i class="devicon-google-plain"></i></a>
-                  
+                  <a href="mailto:srijanshankardubey99@gmail.com">
+                    <i class="devicon-google-plain"></i>
+                  </a>
                 </li>
                 <li>
-                <a href="https://www.linkedin.com/in/srijan-shankar-dubey-140bb920b/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
+                  <a
+                    href="https://www.linkedin.com/in/srijan-shankar-dubey-140bb920b/"
+                    target="_blank"
+                  >
+                    <i class="devicon-linkedin-plain"></i>
+                  </a>
                 </li>
               </ul>
             </div>

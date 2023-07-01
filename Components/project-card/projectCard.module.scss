@@ -105,3 +105,60 @@
     font-size: 22px;
   }
 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 350px) {
+  .card{
+    --width: 250px;
+    margin: 15px auto;
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  .card{
+    --width: 310px;
+    margin: 15px auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 681px) {
+  .card{
+    --width: 250px;
+    margin: 0px 10px 10px 0px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card{
+    --width: 17rem;
+    margin: 0px 10px 10px 0px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card{
+    --width: 280px;
+    margin: 0px 10px 10px 0px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .card{
+    --width: 21rem;
+    margin: 0px 15px 15px 0px;
+  }
+}
+
+
+@media only screen and (min-width: 1400px) {
+  .card{
+    --width: 25rem;
+    margin: 15px;
+    margin-left: 0;
+  }
+}
+

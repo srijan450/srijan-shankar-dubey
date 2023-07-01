@@ -2,20 +2,19 @@
 .clock{
     height: 400px;
     width: 400px;
+    
     background: #282828;
     box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
                 inset 4px 4px 10px rgba(0,0,0,0.5),
                 inset -4px -4px 10px rgba(67,67,67,0.5),
                 4px 4px 10px rgba(0,0,0,0.3);
-                // padding: 2rem;
                 border: 7px solid #282828;
 
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px auto;
-    // padding: 20px;
+    margin: 0px -60px;
     position: relative;
   }
 
@@ -74,7 +73,6 @@
     width: 65%;
     height: 65%;
     background: #282828;
-    // background: red;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;

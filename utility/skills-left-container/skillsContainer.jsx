@@ -68,10 +68,8 @@ const SkillMarquee = ({ children }) => {
   return (
     <div className={styles["main-container"]}>
       <div className={styles.div1}></div>
-      <div className={styles["flex-col"]}>
-        <div className={styles.div2}></div>
-        <div className={styles.div3}>{children}</div>
-      </div>
+      <div className={styles.div2}></div>
+      <div className={styles.div3}>{children}</div>
     </div>
   );
 };

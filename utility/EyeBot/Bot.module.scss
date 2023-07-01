@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 @keyframes hello {
@@ -21,12 +20,8 @@
     background-size: cover;
     width: 348px;
     height: 553.7px;
-    margin-top: 90px;
-    // animation: name duration timing-function delay iteration-count direction fill-mode;
     transform: translateY(0px);
     animation: hello 1000ms ease-in-out infinite both alternate;
-    // ease-in-out 0 infinite;
-    //  both both;
 }
 
 
@@ -56,15 +51,15 @@
     border-radius: 50%;
 }
 
-@media only screen and (min-width: 600px) {
-    
+@media only screen and (min-width: 350px) {
+    .bot{
+        scale: 0.5;
+    }
 }
 
 @media only screen and (min-width: 740px) {
     .bot{
-        // height: 0vh;
-        scale: 0.7;
-        // transform: translateY(-40%);
+        scale: 1;
     }
 }
 
