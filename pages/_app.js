@@ -1,5 +1,3 @@
-import Header from "@/Components/Header/header";
-import MainLoader from "@/Components/mainLoader/MainLoader";
 import Layout from "@/Components/pageLayout";
 import "@/styles/globals.css";
 import "@/styles/pages.css";
@@ -10,17 +8,16 @@ export default function App({ Component, pageProps }) {
   let socket;
   useEffect(() => {
     if (!socket) {
-      socket = io("localhost:5000");
+      socket = io("https://portfolio-backend-m14e.onrender.com");
 
       socket.on("new-unique-identifier", (token) => {
         localStorage.setItem("identifier", token);
-        setuniqueIdentier(token);
       });
 
       socket.emit("user_verification", localStorage.getItem("identifier"));
-      // socket.emit("addActiveUsers");
 
       socket.on("activeUsers", (counter) => {
+        console.log(counter);
         setcount(counter);
       });
     }

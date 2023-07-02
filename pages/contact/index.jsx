@@ -58,13 +58,16 @@ const Contact = () => {
     console.log(e.target.elements.submit);
     if (!error) {
       setshowloader(true);
-      const res = await fetch("http://localhost:5000/contact-me", {
-        method: "POST",
-        body: JSON.stringify(fdata),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
+      const res = await fetch(
+        "https://portfolio-backend-m14e.onrender.com/contact-me",
+        {
+          method: "POST",
+          body: JSON.stringify(fdata),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           setFdata({
@@ -105,7 +108,11 @@ const Contact = () => {
             <div className="left">
               <>
                 <h1 className="heading">Contact & Connect</h1>
-                <form method="POST" onSubmit={submitHandler} className={styles.form}>
+                <form
+                  method="POST"
+                  onSubmit={submitHandler}
+                  className={styles.form}
+                >
                   <div className={styles["two-col-inp"]}>
                     <div
                       className={`${styles["input-container"]} ${

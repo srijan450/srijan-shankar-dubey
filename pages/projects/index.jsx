@@ -46,7 +46,9 @@ const Projects = () => {
       />
       <ProjectLoader title={loader.title} />
       <section className={styles.content}>
-        <h2 className="heading" style={{display: "block"}}>Work & Projects</h2>
+        <h2 className="heading" style={{ display: "block" }}>
+          Work & Projects
+        </h2>
         <p className="text">
           From frontend development to backend development, From Web Components
           and UI/UX animations to React.JS, Redux, PHP, and Node.JS. Check out
@@ -61,6 +63,7 @@ const Projects = () => {
                 active={activestate.category === item.category}
                 category={item.category}
                 setactivestate={setactivestate}
+                key={key}
               />
             );
           })}
@@ -86,9 +89,7 @@ const Projects = () => {
         </div>
         <div className={styles.contact}>
           <h1>Lets talk</h1>
-          <p className="text">
-            Wanna get in touch or talk about a project?
-          </p>
+          <p className="text">Wanna get in touch or talk about a project?</p>
           <p className="text">
             feel free to contact me via email{" "}
             <a href="mailto:srijanshankardubey99@gmail.com">
