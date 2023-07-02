@@ -1,59 +1,128 @@
 [
     {
-        "heading": "the best task app",
+        "heading": "Final Year Project",
+        "img": "./final-year-project-home.png",
+        "website": null,
+        "github": "https://github.com/srijan450/Final-Year-Project",
+        "categoies": ["all","backend","html5","python"]
+    },
+    {
+        "heading": "Best Task App",
         "img": "./best-task-app.png",
         "website": "https://srijan450.github.io/best-task-app",
         "github": "https://github.com/srijan450/best-task-app",
         "categoies": ["all","full-stack","react-js","node-js","express-js","mongodb","mern"]
     },
     {
-        "heading": "ecommerce application",
+        "heading": "Ecommerce Application",
         "img": "./gram-flour.png",
         "website": "https://gram-flour.infinityfreeapp.com/",
         "github": null,
         "categoies": ["all","php","mysql","full-stack","codeignitor"]
     },
     {
-        "heading": "toppersclup",
-        "img": "./toppersclub.png",
-        "website": "https://toppersclubs.com",
-        "github": null,
-        "categoies": ["all","wordpress"]
+        "heading": "My Portfolio",
+        "img": "./portfolio.png",
+        "website": "https://srijan450.github.io/srijan-shankar-dubey",
+        "github": "https://github.com/srijan450/srijan-shankar-dubey",
+        "categoies": ["all","full-stack","front-end","react-js","node-js","express-js","mongodb","mern"]
     },
     {
-        "heading": "mobile photography",
+        "heading": "Photography Website",
         "img": "./mobile-photography.png",
         "website": "https://mobile-photography.great-site.net",
         "github": null,
         "categoies": ["all","php","codeignitor","mysql","full-stack"]
     },
     {
+        "heading": "Wordpress Website",
+        "img": "./toppersclub.png",
+        "website": "https://toppersclubs.com",
+        "github": null,
+        "categoies": ["all","front-end","wordpress"]
+    },
+    {
+        "heading": "Express Weather App",
+        "img": "./weather-app.png",
+        "website": "https://animated-weather-app.onrender.com/",
+        "github": "https://github.com/srijan450/dynamic-weather-app-express",
+        "categoies": ["all","node-js","express-js","back-end"]
+    },
+    {
+        "heading": "Task API",
+        "img": "./api-task-app.png",
+        "website": null,
+        "github": "https://github.com/srijan450/api--task-app",
+        "categoies": ["all","node-js","express-js","mongodb","back-end"]
+    },
+    {
+        "heading": "Internship Task",
+        "img": "./yaro.png",
+        "website": null,
+        "github": "https://github.com/srijan450/yaro-task-one",
+        "categoies": ["all","node-js","express-js","mongodb","back-end"]
+    },
+    {
+        "heading": "Student Management System",
+        "img": "./student-management-system.png",
+        "website": "https://students-management-system.infinityfreeapp.com",
+        "github": "https://github.com/srijan450/Students-Management-System",
+        "categoies": ["all","php","mysql","full-stack","back-end"]
+    },
+    {
         "heading": "Frontend challenge",
         "img": "./united-users.png",
         "website": "https://srijan450.github.io/coding-challenge-frontend",
+        "github": "https://github.com/srijan450/coding-challenge-frontend",
+        "categoies": ["all","front-end","html5","css","js"]
+    },
+    {
+        "heading": "To Do App",
+        "img": "./to-do-app.png",
+        "website": "https://srijan450.github.io/To-Do-App",
+        "github": "https://github.com/srijan450/To-Do-App",
+        "categoies": ["all","front-end","html5","css","js","react-js"]
+    },
+    {
+        "heading": "Video Player",
+        "img": "./video-player.png",
+        "website": "https://srijan450.github.io/video-player/",
+        "github": "https://github.com/srijan450/video-player",
+        "categoies": ["all","front-end","html5","css","react-js"]
+    }, 
+    {
+        "heading": "Sample ReactJS Website",
+        "img": "./react-solution-website.png",
+        "website": "https://srijan450.github.io/react-website/",
+        "github": "https://github.com/srijan450/react-website",
+        "categoies": ["all","front-end","html5","css","js","react-js"]
+    },
+    {
+        "heading": "Weather App In ReactJS",
+        "img": "./weather-app-react.png",
+        "website": "https://srijan450.github.io/weather-app/",
+        "github": "https://github.com/srijan450/weather-app",
+        "categoies": ["all","front-end","html5","css","js","react-js"]
+    },
+    {
+        "heading": "Google Keep Clone",
+        "img": "./keep-clone-reactjs.png",
+        "website": "https://srijan450.github.io/google-keep-clone/",
+        "github": "https://github.com/srijan450/google-keep-clone",
+        "categoies": ["all","front-end","html5","css","js","react-js"]
+    },
+    {
+        "heading": "First Freelancing Project",
+        "img": "./senior-portfolio.png",
+        "website": "https://akansh12.github.io/blogs/index.html",
         "github": null,
         "categoies": ["all","front-end","html5","css","js"]
     },
     {
-        "heading": "student management system",
-        "img": "./student-management-system.png",
-        "website": "https://students-management-system.infinityfreeapp.com",
+        "heading": "Restaurant Website",
+        "img": "./coursera-restaurant-website.png",
+        "website": "https://srijan450.github.io/coursera/",
         "github": null,
-        "categoies": ["all","php","mysql","full-stack","back-end"]
-    },
-    
-    {
-        "heading": "To Do App",
-        "img": "./to-do-app.png",
-        "website": "https://srijan450.github.io/To-Do-App/",
-        "github": null,
-        "categoies": ["all","front-end","html5","css","js","react-js"]
-    },
-    {
-        "heading": "video player",
-        "img": "./video-player.png",
-        "website": "https://srijan450.github.io/video-player/",
-        "github": null,
-        "categoies": ["all","front-end","html5","css","react-js"]
+        "categoies": ["all","front-end","html5","css","js"]
     }
 ]

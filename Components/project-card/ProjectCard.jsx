@@ -35,7 +35,7 @@ const ProjectCard = ({
           <SuperButton4 title="view project" property="link" link={website} />
         )}
         {github && (
-          <SuperButton4 title="show code" property="link" link={github} />
+          <SuperButton4 title="github" property="link" link={github} />
         )}
       </div>
     </div>
