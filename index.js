@@ -12,14 +12,14 @@ const server = http.createServer(app);
 const port = process.env.PORT || 5000;
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://srijan450.github.io",
     methods: ["GET", "POST"],
   },
 });
 
 const options = {
-  // origin: 'https://srijan450.github.io',
-  origin: "http://localhost:3000",
+  origin: 'https://srijan450.github.io',
+  // origin: "http://localhost:3000",
   credentials: true,
   optionSuccessStatus: 200,
 };
