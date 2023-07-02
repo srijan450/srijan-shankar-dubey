@@ -11,6 +11,23 @@ const Header = () => {
   return (
     <>
       <Head>
+        <meta
+          name="description"
+          content="Have a look at my portfolio website."
+        />
+        <meta
+          name="description"
+          content="HEY THERE! 👋 I'm,
+          SRIJAN SHANKAR
+          DUBEY
+          I'M, a Freelancer.|
+          Turning ideas into real life products is my calling.
+          
+          I am an independent creative, IT graduate who likes to craft solid and scalable websites with great user experience."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="./avatar.png" />
+        <link rel="apple-touch-icon" href="./avatar.png" />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
@@ -30,11 +47,31 @@ const Header = () => {
             }`}
           >
             <ul>
-              <NavigationButton title={"home"} intime={1} active={router.asPath==="/"}/>
-              <NavigationButton title={"about"} intime={1.2} active={router.asPath==="/about"}/>
-              <NavigationButton title={"skills"} intime={1.4} active={router.asPath==="/skills"}/>
-              <NavigationButton title={"projects"} intime={1.6} active={router.asPath==="/projects"}/>
-              <NavigationButton title={"contact"} intime={1.8} active={router.asPath==="/contact"}/>
+              <NavigationButton
+                title={"home"}
+                intime={1}
+                active={router.asPath === "/"}
+              />
+              <NavigationButton
+                title={"about"}
+                intime={1.2}
+                active={router.asPath === "/about"}
+              />
+              <NavigationButton
+                title={"skills"}
+                intime={1.4}
+                active={router.asPath === "/skills"}
+              />
+              <NavigationButton
+                title={"projects"}
+                intime={1.6}
+                active={router.asPath === "/projects"}
+              />
+              <NavigationButton
+                title={"contact"}
+                intime={1.8}
+                active={router.asPath === "/contact"}
+              />
             </ul>
           </div>
           <div>
