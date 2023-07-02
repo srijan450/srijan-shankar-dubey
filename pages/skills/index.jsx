@@ -57,7 +57,7 @@ const About = () => {
               </>
             </div>
 
-            <div className="right">
+            <div className={`right ${styles.right}`}>
               <Skillset />
             </div>
           </div>

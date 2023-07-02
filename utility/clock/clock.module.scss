@@ -2,7 +2,6 @@
 .clock{
     height: 400px;
     width: 400px;
-    
     background: #282828;
     box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
                 inset 4px 4px 10px rgba(0,0,0,0.5),
@@ -172,5 +171,19 @@
   .clock{
     width: 300px;
     height: 300px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .clock{
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clock{
+    width: 400px;
+    height: 400px;
   }
 }

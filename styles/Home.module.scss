@@ -4,6 +4,22 @@
   
 }
 
+.hiiIcon{
+  display: inline-block;
+  animation: helloAnimation 800ms ease-in-out 0s infinite alternate;
+  transform-origin: center;
+  
+}
+
+@keyframes helloAnimation {
+  from{
+    transform:  translateY(-5px) rotateZ(20deg);
+  }
+  to{
+    transform: translateX(0px) translateY(-5px) rotateZ(40deg);
+  }
+}
+
 .text-name{
   text-transform: uppercase;
   font-weight: 700;
@@ -21,7 +37,6 @@
 
 
 .text-paragraph{
-
   font-weight: 500;
   text-align: justify;
   word-wrap: break-word;
@@ -38,150 +53,194 @@
   display: flex; 
   flex-direction: row;
   justify-content: space-between;
-  padding: 0rem 0;
+  padding: 3rem 0;
 }
-
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 430px) {
-.button-container{
-  flex-direction: column;
-}
-}
-
-// @media screen and (max-width:740px) {
-//   .right{
-//     padding: 0px;
-//   }
-//   .text-name{
-//     font-size: 2rem;
-//     line-height: 2.5rem;
-//   }
-
-//   .text-hello{
-//     font-size: 1rem;
-//     line-height: 1.5rem;
-//   }
-
-//   .text-about{
-//     font-size: 1.5rem;
-//     line-height: 2rem;
-//   }
-//   .text-paragraph{
-//     font-size: 1.5rem;
-//   }
- 
- 
-// }
-
 
 @media screen and (max-width:350px) {
   .text-hello{
     margin-bottom: 10px;
+    font-size: 1.3rem;
   }
   .text-name{
-    line-height: 25px;
-  }
-  .right{
-    display: none;
+    font-size: 2.1rem;
+    line-height: 2rem;
   }
   .text-about{
+    font-size: 1.5rem;
     line-height: 20px;
     text-align: left;
     min-height: 40px;
     margin-top: 20px;
   }
-  .text-paragraph{
-    word-spacing: .3rem;
+  .right{
+    align-self: auto;
+    padding: 10px;
   }
-  
-.button-container{
-  margin: 3rem 0px;
-}
+  .text-paragraph{
+    font-size: 1.3rem;
+    word-spacing: .3rem;
+  }  .button-container{
+    margin: -2rem 0rem 0rem 0px;
+    padding-bottom: 0rem;
+  }
 }
 @media only screen and (min-width: 350px) {
+  .text-hello{
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+  .text-name{
+    font-size: 2.6rem;
+    line-height: 2.5rem;
+  }
+  .text-about{
+    font-size: 1.7rem;
+    line-height: 20px;
+    text-align: left;
+    min-height: 40px;
+    margin-top: 20px;
+  }
   .right{
-    // display: none;
-    padding: 0
+    align-self: auto;
+    padding: 0px;
+  }
+  .text-paragraph{
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    word-spacing: .1rem;
   }
   .button-container{
-    margin: 3rem 0px;
+    margin: -1rem 0rem 0rem 0px;
+    padding-bottom: 0rem;
   }
 }
 
-@media only screen and (min-width: 740px) {
-  .right{
-    display: block;
+@media only screen and (max-width: 430px) {
+  .button-container{
+    flex-direction: column;
   }
+  }
+
+  @media only screen and (min-width: 500px) {
+    .text-hello{
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+    .text-name{
+      font-size: 3rem;
+      line-height: 3rem;
+      word-spacing: .3rem;
+    }
+    .text-about{
+      font-size: 2rem;
+      line-height: 20px;
+      text-align: left;
+      min-height: 40px;
+      margin-top: 20px;
+    }
+    .right{
+      align-self: auto;
+      padding: 10px;
+    }
+    .text-paragraph{
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      word-spacing: .1rem;
+    }
+  }
+
+
+@media only screen and (min-width: 681px) {
   .text-hello{
+    margin-bottom: 15px;
     font-size: 1.8rem;
   }
   .text-name{
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 3.3rem;
+    line-height: 3.3rem;
+    word-spacing: .5rem;
   }
   .text-about{
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    text-align: left;
+    min-height: 40px;
     margin-top: 20px;
-    font-size: 2rem;
+  }
+  .right{
+    padding: 60px;
   }
   .text-paragraph{
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    word-spacing: .3rem;
   }
   .button-container{
-    margin: 3rem 0px;
+    margin: -1rem 0rem 0rem 0px;
+    padding-bottom: 0rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .right{
-    padding: 60px;
-  }
   .text-hello{
-    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-size: 1.7rem;
   }
   .text-name{
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 3.3rem;
+    line-height: 3.3rem;
+    word-spacing: .5rem;
   }
   .text-about{
-    margin-top: 20px;
-    font-size: 2rem;
-    // line-height: 30px;
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+    text-align: left;
+    min-height: 40px;
+    margin-top: 10px;
+  }
+  .right{
+    padding: 0px;
+    align-self: center;
   }
   .text-paragraph{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    word-spacing: .2rem;
   }
   .button-container{
-    margin: 3rem 0px;
+    margin: -1rem 0rem 0rem 0px;
+    padding-bottom: 0rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .right{
-    padding: 0;
-  }
   .text-hello{
-    font-size: 2rem;
-    line-height: 4rem;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
   }
   .text-name{
-  font-size: 5rem;
-  line-height: 4.5rem;
+    font-size: 4.5rem;
+    line-height: 5rem;
+    word-spacing: 1rem;
   }
   .text-about{
-    margin-top: 30px;
-    
-  font-size: 3rem;
-  line-height: 5rem;
-    // line-height: 30px;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: left;
+    min-height: 40px;
+    margin-top: 0px;
+  }
+  .right{
+    padding: 0px;
+    align-self: center;
   }
   .text-paragraph{
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    word-spacing: .3rem;
   }
   .button-container{
-    margin: 20px 0px;
+    margin: 0rem 0rem 0rem 0px;
+    padding-bottom: 0rem;
   }
 }

@@ -2,8 +2,8 @@
 .pages{
     background-color: black;
     height: 100vh;
-    overflow: auto;
     width: 100vw;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,20 +12,51 @@
 
 .main{
     width: 100%;
-    min-height: 100%;
+    height: 100%;
+    overflow-y: auto;
     padding: 0px 120px;
 }
+
+
+.main::-webkit-scrollbar{
+    width: 5px;
+  }
+
+.main::-webkit-scrollbar-button{
+    height: 0;
+    width: 5px;
+}
+
+.main::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background: #606060;
+    width: 5px;
+}
+
+.main::-webkit-scrollbar-corner{
+    border-radius: 40px;
+    width: 5px;
+}
+
+.main::-webkit-scrollbar-track{
+    width: 5px;
+}
+
+.main::-webkit-scrollbar-track-piece{
+    width: 5px;
+}
+
 
 .row{
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    height: fit-content;
 }
 
 .left{
     color: var(--stark);
     width: 60%;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -38,7 +69,6 @@
 }
 
 .heading{
-    
     font-size: 4.5rem;
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 900;
@@ -93,10 +123,9 @@
 @media only screen and (min-width: 350px) {
     .pages{
         padding: 60px 0px;
-        /* padding-bottom: 120px; */
     }
     .main{
-        padding: 0px 20px;
+        padding: 0px 12px;
     }
     .row{
         flex-direction: column;
@@ -151,7 +180,6 @@
     }
     .heading2{
         display: block;
-        /* text-align: center; */
     }
     .text{
         font-size: 1.3rem;
@@ -167,7 +195,7 @@
         padding: 0px 110px;
     }
     .row{
-        flex-direction: column;
+        flex-direction: column;        
     }
     .left{
         order: 2;
@@ -198,15 +226,18 @@
     }
     .row{
         flex-direction: row;
+        
     }
     .left{
         width: 60%;
         order: 1;
+        height: max-content;
+        padding-bottom: 0;
     }
     .heading{
         font-size: 4rem;
         display: block;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
     .heading2{
         display: none;
@@ -225,6 +256,9 @@
     .main{
         padding: 0px 120px;
     }
+    .row{
+        height: 100%;
+    }
     .heading{
         font-size: 4.5rem;
         display: block;
@@ -235,6 +269,7 @@
     }
     .left{
         width: 60%;
+        height: auto;
     }
     .right{
         width: 35%;
