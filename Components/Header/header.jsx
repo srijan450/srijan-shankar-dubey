@@ -13,17 +13,7 @@ const Header = () => {
       <Head>
         <meta
           name="description"
-          content="Have a look at my portfolio website."
-        />
-        <meta
-          name="description"
-          content="HEY THERE! 👋 I'm,
-          SRIJAN SHANKAR
-          DUBEY
-          I'M, a Freelancer.|
-          Turning ideas into real life products is my calling.
-          
-          I am an independent creative, IT graduate who likes to craft solid and scalable websites with great user experience."
+          content="Hey I am Srijan Shankar Dubey, Frontend Developer, Backend Developer, MERN stack Developer, Full Stack Dveloper, Wordpress Developer, Coder"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="./avatar.png" />

@@ -46,11 +46,23 @@ const ReactBot = () => {
             <span className={styles.span2}></span>
           </button>
 
-          <picture className={styles.picture}>
-            <source type="image/avif" srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-000.avif" />
-            <source type="image/png" srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-000.png" />
+          <picture
+            className={styles.picture}
+            about="React Bot image on Srijan Shankar Dubey Portfolio Website"
+          >
+            <source
+              type="image/avif"
+              about="React Bot image on Srijan Shankar Dubey Portfolio Website"
+              srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-000.avif"
+            />
+            <source
+              type="image/png"
+              about="React Bot image on Srijan Shankar Dubey Portfolio Website"
+              srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-000.png"
+            />
             <img
               src="https://srijan450.github.io/srijan-shankar-dubey/mascot-000.png"
+              alt="React Bot image on Srijan Shankar Dubey Portfolio Website"
               className={`${styles.picture} ${styles.imgs}`}
               style={{
                 opacity: 1,
@@ -59,12 +71,24 @@ const ReactBot = () => {
               }}
             />
           </picture>
-          <picture className={styles.picture}>
-            <source type="image/avif" srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-001.avif" />
-            <source type="image/png" srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-001.png" />
+          <picture
+            className={styles.picture}
+            about="React Bot image on Srijan Shankar Dubey Portfolio Website"
+          >
+            <source
+              about="React Bot image on Srijan Shankar Dubey Portfolio Website"
+              type="image/avif"
+              srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-001.avif"
+            />
+            <source
+              type="image/png"
+              about="React Bot image on Srijan Shankar Dubey Portfolio Website"
+              srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-001.png"
+            />
             <img
               src="https://srijan450.github.io/srijan-shankar-dubey/mascot-001.png"
               className={`${styles.picture} ${styles.classuni} ${styles.imgs}`}
+              alt="React Bot image on Srijan Shankar Dubey Portfolio Website"
               style={{
                 opacity: 1,
                 transitionDuration: "0ms",
@@ -72,12 +96,24 @@ const ReactBot = () => {
               }}
             />
           </picture>
-          <picture className={styles.picture}>
-            <source type="image/avif" srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-010.avif" />
-            <source type="image/png" srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-010.png" />
+          <picture
+            className={styles.picture}
+            about="React Bot image on Srijan Shankar Dubey Portfolio Website"
+          >
+            <source
+              type="image/avif"
+              about="React Bot image on Srijan Shankar Dubey Portfolio Website"
+              srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-010.avif"
+            />
+            <source
+              type="image/png"
+              about="React Bot image on Srijan Shankar Dubey Portfolio Website"
+              srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-010.png"
+            />
             <img
               src="https://srijan450.github.io/srijan-shankar-dubey/mascot-010.png"
               className={`${styles.picture} ${styles.classuni} ${styles.imgs}`}
+              alt="React Bot image on Srijan Shankar Dubey Portfolio Website"
               style={{
                 opacity: 1,
                 transitionDuration: "0ms",
@@ -85,12 +121,24 @@ const ReactBot = () => {
               }}
             />
           </picture>
-          <picture className={styles.picture}>
-            <source type="image/avif" srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-100.avif" />
-            <source type="image/png" srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-100.png" />
+          <picture
+            className={styles.picture}
+            about="React Bot image on Srijan Shankar Dubey Portfolio Website"
+          >
+            <source
+              type="image/avif"
+              about="React Bot image on Srijan Shankar Dubey Portfolio Website"
+              srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-100.avif"
+            />
+            <source
+              type="image/png"
+              about="React Bot image on Srijan Shankar Dubey Portfolio Website"
+              srcset="https://srijan450.github.io/srijan-shankar-dubey/mascot-100.png"
+            />
             <img
               src="https://srijan450.github.io/srijan-shankar-dubey/mascot-100.png"
               className={`${styles.picture} ${styles.classuni} ${styles.imgs}`}
+              alt="React Bot image on Srijan Shankar Dubey Portfolio Website"
               style={{
                 opacity: 1,
                 transitionDuration: "0ms",

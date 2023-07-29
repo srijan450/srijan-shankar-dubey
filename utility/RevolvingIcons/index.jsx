@@ -56,34 +56,52 @@ const RevolvingIcons = () => {
               <i className="devicon-jquery-plain"></i>
             </span>
           </div>
-          <div className={`${styles.item} ${styles.glow}`} style={{ "--i": 10 }}>
+          <div
+            className={`${styles.item} ${styles.glow}`}
+            style={{ "--i": 10 }}
+          >
             <span className={styles.span}>
               <i className="devicon-wordpress-plain"></i>
             </span>
           </div>
-          <div className={`${styles.item} ${styles.glow}`} style={{ "--i": 11 }}>
+          <div
+            className={`${styles.item} ${styles.glow}`}
+            style={{ "--i": 11 }}
+          >
             <span className={styles.span}>
               <i className="devicon-typescript-plain"></i>
             </span>
           </div>
-          <div className={`${styles.item} ${styles.glow}`} style={{ "--i": 12 }}>
+          <div
+            className={`${styles.item} ${styles.glow}`}
+            style={{ "--i": 12 }}
+          >
             <span className={styles.span}>
               <i className="devicon-sass-original"></i>
             </span>
           </div>
-          <div className={`${styles.item} ${styles.glow}`} style={{ "--i": 13 }}>
+          <div
+            className={`${styles.item} ${styles.glow}`}
+            style={{ "--i": 13 }}
+          >
             <span className={styles.span}>
               <i className="devicon-react-original"></i>
             </span>
           </div>
-          <div className={`${styles.item} ${styles.glow}`} style={{ "--i": 14 }}>
+          <div
+            className={`${styles.item} ${styles.glow}`}
+            style={{ "--i": 14 }}
+          >
             <span className={styles.span}>
               <i className="devicon-nextjs-original"></i>
             </span>
           </div>
 
           <div className={styles["center-item"]}>
-            <img src="./img-wb.png" alt="" />
+            <img
+              src="./srijan_shankar_dubey.png"
+              alt="Srijan Shankar Dubey, Portfolio Website, Frontend Developer, Backend Developer, Full Stack Developer, MERN stack Developer, Coder, Wordpress Developer, Software Developer"
+            />
           </div>
         </div>
       </div>

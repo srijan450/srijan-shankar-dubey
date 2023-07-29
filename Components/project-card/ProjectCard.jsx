@@ -29,7 +29,10 @@ const ProjectCard = ({
         <i></i>
       </div>
 
-      <img src={imgURL} alt="img" />
+      <img
+        src={imgURL}
+        alt="Projects developed by Srijan Shankar Dubey, Portfolio Website, Frontend Developer, Backend Developer, Full Stack Developer, MERN stack Developer, Coder, Wordpress Developer, Software Developer"
+      />
       <div className={styles.button}>
         {website && (
           <SuperButton4 title="view project" property="link" link={website} />

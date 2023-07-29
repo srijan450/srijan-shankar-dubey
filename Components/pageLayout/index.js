@@ -8,7 +8,7 @@ const Layout = ({ count, children }) => {
   return (
     <>
       <Head>
-        <title>My Portfolio</title>
+        <title>Srijan Shankar Dubey | Software Developer | Frontend Developer | Backend Developer | Full Stack Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="google-site-verification"

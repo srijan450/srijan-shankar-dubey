@@ -47,7 +47,10 @@ const MainLoader = () => {
       }`}
     >
       <div className={styles.loader}>
-        <img src="./avatar.png" alt="" />
+        <img
+          src="./avatar.png"
+          alt="Avatar of Srijan Shankar Dubey, Portfolio Website, Frontend Developer, Backend Developer, Full Stack Developer, MERN stack Developer, Coder, Wordpress Developer, Software Developer"
+        />
       </div>
     </div>
   );
