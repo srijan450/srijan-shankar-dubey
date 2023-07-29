@@ -7,10 +7,10 @@
         "categoies": ["all","backend","html5","python"]
     },
     {
-        "heading": "Best Task App",
+        "heading": "TaskShare+",
         "img": "./best-task-app.png",
-        "website": "https://srijan450.github.io/best-task-app",
-        "github": "https://github.com/srijan450/best-task-app",
+        "website": "https://srijan450.github.io/taskshareplus/",
+        "github": "https://github.com/srijan450/taskshareplus",
         "categoies": ["all","full-stack","react-js","node-js","express-js","mongodb","mern"]
     },
     {
