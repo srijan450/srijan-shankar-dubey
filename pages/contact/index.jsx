@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "./Contacts.module.scss";
 import SuperButton4 from "@/Components/super-button-4";
 import PageNavigator from "@/Components/page-navigation";
+import ReactBot from "@/utility/react-bot";
 const Contact = () => {
   const regex = {
     name: /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/,
@@ -101,105 +102,104 @@ const Contact = () => {
         next={"skills"}
         nextLink={"/skills"}
       />
-      <section className="pages">
-        <main className="main">
+      <section className="pages pages-img-background">
+        <div className="row">
           <h1 className="heading heading2">Contact & Connect</h1>
-          <div className="row">
-            <div className="left">
-              <>
-                <h1 className="heading">Contact & Connect</h1>
-                <form
-                  method="POST"
-                  onSubmit={submitHandler}
-                  className={styles.form}
-                >
-                  <div className={styles["two-col-inp"]}>
-                    <div
-                      className={`${styles["input-container"]} ${
-                        styles[fedata.name]
-                      }`}
-                    >
-                      <input
-                        className={styles.input}
-                        type="text"
-                        name="name"
-                        value={fdata.name}
-                        onChange={inputHandler}
-                        onBlur={inputFocusChange}
-                        placeholder="your name"
-                        title="Kindly provide your name!"
-                        required
-                      />
-                      <label className={styles.label} htmlFor="name"></label>
-                    </div>
-                    <div
-                      className={`${styles["input-container"]} ${
-                        styles[fedata.email]
-                      }`}
-                    >
-                      <input
-                        className={styles.input}
-                        type="email"
-                        name="email"
-                        value={fdata.email}
-                        onChange={inputHandler}
-                        onBlur={inputFocusChange}
-                        placeholder="your email"
-                        title="Kindly provide your email!"
-                        required
-                      />
-                      <label className={styles.label} htmlFor="email"></label>
-                    </div>
-                  </div>
+          <div className="left">
+            <>
+              <h1 className="heading">Contact & Connect</h1>
+              <form
+                method="POST"
+                onSubmit={submitHandler}
+                className={styles.form}
+              >
+                <div className={styles["two-col-inp"]}>
                   <div
                     className={`${styles["input-container"]} ${
-                      styles[fedata.subject]
+                      styles[fedata.name]
                     }`}
                   >
                     <input
                       className={styles.input}
                       type="text"
-                      name="subject"
-                      value={fdata.subject}
+                      name="name"
+                      value={fdata.name}
                       onChange={inputHandler}
                       onBlur={inputFocusChange}
-                      placeholder="subject"
-                      title="Please provide the subject for your message!"
+                      placeholder="your name"
+                      title="Kindly provide your name!"
                       required
                     />
-                    <label className={styles.label} htmlFor="subject"></label>
+                    <label className={styles.label} htmlFor="name"></label>
                   </div>
-
                   <div
                     className={`${styles["input-container"]} ${
-                      styles[fedata.message]
+                      styles[fedata.email]
                     }`}
                   >
-                    <textarea
-                      className={`${styles.input} ${styles.textArea}`}
-                      placeholder="message"
-                      name="message"
-                      value={fdata.message}
+                    <input
+                      className={styles.input}
+                      type="email"
+                      name="email"
+                      value={fdata.email}
                       onChange={inputHandler}
                       onBlur={inputFocusChange}
-                      title="Kindly message me the opportunities or for cobalartion!"
+                      placeholder="your email"
+                      title="Kindly provide your email!"
                       required
-                    ></textarea>
-                    <label className={styles.label} htmlFor="message"></label>
+                    />
+                    <label className={styles.label} htmlFor="email"></label>
                   </div>
-                  <SuperButton4
-                    name="submit"
-                    type="submit"
-                    showLoader={showloader}
+                </div>
+                <div
+                  className={`${styles["input-container"]} ${
+                    styles[fedata.subject]
+                  }`}
+                >
+                  <input
+                    className={styles.input}
+                    type="text"
+                    name="subject"
+                    value={fdata.subject}
+                    onChange={inputHandler}
+                    onBlur={inputFocusChange}
+                    placeholder="subject"
+                    title="Please provide the subject for your message!"
+                    required
                   />
-                </form>
-              </>
-            </div>
-            <div className={`right ${styles.right}`}>
-              <Clock />
-            </div>
+                  <label className={styles.label} htmlFor="subject"></label>
+                </div>
+
+                <div
+                  className={`${styles["input-container"]} ${
+                    styles[fedata.message]
+                  }`}
+                >
+                  <textarea
+                    className={`${styles.input} ${styles.textArea}`}
+                    placeholder="message"
+                    name="message"
+                    value={fdata.message}
+                    onChange={inputHandler}
+                    onBlur={inputFocusChange}
+                    title="Kindly message me the opportunities or for cobalartion!"
+                    required
+                  ></textarea>
+                  <label className={styles.label} htmlFor="message"></label>
+                </div>
+                <SuperButton4
+                  name="submit"
+                  type="submit"
+                  showLoader={showloader}
+                />
+              </form>
+            </>
           </div>
-        </main>
+          <div className={`right ${styles.right}`}>
+            <Clock />
+            {/* <ReactBot /> */}
+          </div>
+        </div>
       </section>
     </>
   );

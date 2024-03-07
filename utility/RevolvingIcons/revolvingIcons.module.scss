@@ -9,7 +9,7 @@
     --radius: 200px;
     width: calc(2 * var(--radius));
     height: calc(2 * var(--radius));
-    background-color: #404040;
+    background: #404040;
     border-radius: 50%;
     display: grid;
     z-index: 0;
@@ -88,7 +88,10 @@
     width: calc(var(--radius) * 1.5);
     height: calc(var(--radius) * 1.5);
     position: absolute;
-    background: black;
+    background: url('../../public/bg1.jpg'), plum;
+    backface-visibility: hidden;
+    background-position: center;
+    background-size: cover;
     border-radius: 50%;
     left: 0;
     right: 0;
@@ -171,38 +174,24 @@
 //         font-size: 18px;
 //     }
 // }
-@media only screen and (max-width: 300px) {
-    .circle{
-        --radius: 100px
-    }
-    .item {
-        height: 20px;
-        width: 20px;
-        font-size: 10px;
-    }
-}
+// @media only screen and (max-width: 300px) {
+    
+// }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 300px) {
-    .circle{
-        --radius: 140px
-    }
-    .item {
-        height: 28px;
-        width: 28px;
-        font-size: 14px;
-    }
-}
-@media only screen and (min-width: 430px) {
-    .circle{
-        --radius: 170px
-    }
-    .item {
-        height: 34px;
-        width: 34px;
-        font-size: 17px;
-    }
-}
+// @media only screen and (min-width: 300px) {
+//     .circle{
+//         --radius: 140px
+//     }
+//     .item {
+//         height: 28px;
+//         width: 28px;
+//         font-size: 14px;
+//     }
+// }
+// @media only screen and (min-width: 430px) {
+    
+// }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 540px) {
@@ -217,14 +206,13 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
     .circle{
-        --radius: 200px
-    }
-    .item {
-        height: 40px;
-        width: 40px;
-        font-size: 18px;
+        --radius: 150px;
     }
 }
 
@@ -251,3 +239,184 @@
         font-size: 18px;
     }
 }
+
+ /* Desktops */
+ @media only screen and (min-width: 1441px) {
+    .text-hello{
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    .text-name{
+      font-size: 4.5rem;
+      line-height: 5rem;
+      word-spacing: 1rem;
+    }
+    .text-about{
+      font-size: 2.5rem;
+      line-height: 4rem;
+      text-align: left;
+      min-height: 40px;
+      margin-top: 0px;
+    }
+    .row{
+      padding: 10px 120px 10px 40px;
+    }
+    .left{
+      width: 75%;
+    }
+    .right{
+      display: none;
+      width: 100%;
+      justify-content: center;
+      align-self: center;
+      margin: 20px 0;
+    }
+    .text-paragraph{
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      word-spacing: .3rem;
+    }
+    .button-container{
+      margin: 0rem 0rem 0rem 0px;
+      padding-bottom: 0rem;
+    }
+  }
+  
+  /* Laptops */
+  @media only screen and (min-width: 1020px) and (max-width: 1440px) {
+    .text-hello{
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    .text-name{
+      font-size: 4.5rem;
+      line-height: 5rem;
+      word-spacing: 1rem;
+    }
+    .text-about{
+      font-size: 2.5rem;
+      line-height: 4rem;
+      text-align: left;
+      min-height: 40px;
+      margin-top: 0px;
+    }
+    .row{
+      padding: 10px 120px 10px 40px;
+    }
+    .left{
+      width: 70%;
+    }
+    .right{
+      display: none;
+      width: 100%;
+      justify-content: center;
+      align-self: center;
+      margin: 20px 0;
+    }
+    .text-paragraph{
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      word-spacing: .3rem;
+    }
+    .button-container{
+      margin: 0rem 0rem 0rem 0px;
+      padding-bottom: 0rem;
+    }
+  }
+  
+  /* Tablets - Portrait and Landscape */
+  @media only screen and (min-width: 769px) and (max-width: 1020px) {
+    .text-hello{
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    .text-name{
+      font-size: 4.5rem;
+      line-height: 5rem;
+      word-spacing: 1rem;
+    }
+    .text-about{
+      font-size: 2.5rem;
+      line-height: 4rem;
+      text-align: left;
+      min-height: 40px;
+      margin-top: 0px;
+    }
+    .row{
+      padding: 0px 120px 0px 40px;
+    }
+    .left{
+      width: 50%;
+    }
+    .right{
+      display: none;
+    }
+    .text-paragraph{
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      word-spacing: .3rem;
+    }
+    .button-container{
+      margin: 0rem 0rem 0rem 0px;
+      padding-bottom: 0rem;
+    }
+  }
+  
+  /* Landscape Tablets */
+  @media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: landscape) {
+    /* Your styles for landscape tablets here */
+    .circle{
+        --radius: 150px
+    }
+    .item {
+        height: 34px;
+        width: 34px;
+        font-size: 17px;
+    }
+  }
+  
+  /* Mobiles - Portrait and Landscape */
+  @media only screen and (max-width: 768px) {
+    .circle{
+        --radius: 180px
+    }
+  }
+  
+  /* Landscape Phones */
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    .circle{
+        --radius: 170px
+    }
+    .item {
+        height: 34px;
+        width: 34px;
+        font-size: 17px;
+    }
+  }
+  
+  /* Small Phones */
+  @media only screen and (max-width: 480px) {
+    .circle{
+        --radius: 150px
+    }
+    .item {
+        height: 28px;
+        width: 28px;
+        font-size: 14px;
+    }
+  }
+  
+  /* Extra Small Phones */
+  @media only screen and (max-width: 320px) {
+    .circle{
+        --radius: 100px
+    }
+    .item {
+        height: 20px;
+        width: 20px;
+        font-size: 10px;
+    }
+  }
+  
+
+ 

@@ -5,20 +5,80 @@
   padding: 3rem 0;
 }
 
-@media screen and (max-width:350px) {
+.right-mb{
+  background: url('../../public/bg-2.png'), linear-gradient(90deg,rgba(253, 252, 252, 0.15), rgba(12, 12, 12, 0) 60%);
+  border-right: 2px solid rgba(253, 252, 252, 0.15);
+  height: 350px;
+  width: 100%;
+  background-position: right;
+  background-size: cover;
+  align-items: center;
+  padding: 0px 30px;
+  justify-content: start;
+  display: none;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1020px) and (orientation: landscape) {
   .right{
     padding: 60px;
-    width: -webkit-fill-available;
+    margin-top: -2rem;
   }
   .button-container{
     margin: -2rem 0rem 0rem 0px;
     padding-bottom: 0rem;
   }
+  .button-container{
+    flex-direction: row;
+    margin: -2rem 0rem 0rem 0px;
+    padding-bottom: 0rem;
+  }
 }
 
-@media only screen and (min-width: 350px) {
+
+/* Landscape Tablets */
+@media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: landscape) {
   .right{
-    padding: 60px;
+    padding: 0px;
+    margin: 2rem 0px;
+    margin-bottom: 2.5rem;
+  }
+  .button-container{
+    margin: -2rem 0rem 0rem 0px;
+    padding-bottom: 0rem;
+  }
+  .right-mb{
+    display: flex;
+    border-radius: 20px;
+    margin-top: -20px;
+  }
+  .right-lg{
+    display: none;
+  }
+  .button-container{
+    flex-direction: row;
+    margin: -2rem 0rem 0rem 0px;
+    padding-bottom: 0rem;
+  }
+}
+
+/* Mobiles - Portrait and Landscape */
+@media only screen and (max-width: 768px) {
+  .right{
+    padding: 0px;
+    margin: 2rem 0px;
+    margin-bottom: 2.5rem;
+  }
+  .button-container{
+    margin: -2rem 0rem 0rem 0px;
+    padding-bottom: 0rem;
+  }
+  .right-mb{
+    display: flex;
+    border-radius: 20px;
+    margin-top: -20px;
+  }
+  .right-lg{
+    display: none;
   }
   .button-container{
     margin: -2rem 0rem 0rem 0px;
@@ -26,17 +86,63 @@
   }
 }
 
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 430px) {
-.button-container{
-  flex-direction: column;
-}
-}
-
-@media only screen and (min-width: 681px) {
+/* Landscape Phones */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .right{
+    padding: 0px;
+    margin: 2rem 0px;
+    margin-bottom: 3.5rem;
+  }
   .button-container{
+    flex-direction: column;
     margin: -2rem 0rem 0rem 0px;
     padding-bottom: 0rem;
   }
+  .right-mb{
+    display: flex;
+    border-radius: 20px;
+    margin-top: -20px;
+  }
+  .right-lg{
+    display: none;
+  }
+  .button-container{
+    flex-direction: row;
+    margin: -1rem 0rem 0rem 0px;
+    padding-bottom: 0rem;
+  }
+}
+
+/* Small Phones */
+@media only screen and (max-width: 480px) {
+  .right{
+    padding: 0px;
+  }
+  .button-container{
+    flex-direction: column;
+    margin: -2rem 0rem 0rem 0px;
+    padding-bottom: 0rem;
+  }
+  .right-mb{
+    display: flex;
+    border-radius: 20px;
+    margin-top: -20px;
+  }
+  .right-lg{
+    display: none;
+  }
+  .button-container{
+    flex-direction: column;
+    margin: -1rem 0rem 0rem 0px;
+    padding-bottom: 0rem;
+  }
+}
+
+/* Extra Small Phones */
+@media only screen and (max-width: 320px) {
+   .button-container{
+            flex-direction: column;
+            margin: -1rem 0rem 0rem 0px;
+            padding-bottom: 0rem;
+    }
 }

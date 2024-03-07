@@ -109,33 +109,59 @@ body {
   position: absolute;
   top: 0;
   overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
   width: 100vw;
-  background: white;
   opacity: 1;
   transform: rotate(0deg);
   transform-origin: left;
   transition: transform 1s;
 }
 
+.page::-webkit-scrollbar{
+  width: 5px;
+}
+
+.page::-webkit-scrollbar-button{
+  height: 0;
+  width: 5px;
+}
+
+.page::-webkit-scrollbar-thumb{
+  border-radius: 60px;
+  background: #484f58;
+  width: 5px;
+}
+
+.page::-webkit-scrollbar-corner{
+  border-radius: 40px;
+  width: 5px;
+}
+
+.page::-webkit-scrollbar-track{
+  width: 5px;
+}
+
+.page::-webkit-scrollbar-track-piece{
+  width: 5px;
+  background: #000;
+}
+
+
 .page-rotate{
   transform: perspective(5000px) rotateY(20deg);
   transform-origin: left;
 }
 
-.main-div{
-  background: black;
-  min-height: 100vh;
-  width: 100vw;
-}
-
 .background{
-  height: 100vh;
-  width: 100vw;
-  background: black;
   position: fixed;
   right: 0;
   bottom: 0;
-  opacity: 0.3;
+  top: 0;
+  background: #000;
+  min-width: 100%;
+  height: 100vh;
+  opacity: 0.5;
   object-fit: cover;
 }
 

@@ -1,0 +1,50 @@
+.skill{
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 6px solid #414141;
+    background-color: #9F9F9F;
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+  
+  &::after{
+    content: "";
+    position: absolute;
+    background: #8b949e;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    height: 40px;
+    width: 120%;
+    transition: all 200ms ease-in;
+    transform: translate(-65px, 65px) rotateZ(45deg);
+  }
+
+  &:hover{
+    background: #707070;
+  }
+  
+   &:hover::after {
+    transform: translate(55px, -55px) rotateZ(45deg);
+  }
+  
+  & img{
+   width: 45px;
+   position: relative;
+   z-index: 2;
+  }
+  
+  & span{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 25px;
+  }
+}

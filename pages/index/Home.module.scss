@@ -1,0 +1,648 @@
+/* Developed by Srijan Shankar Dubey */
+
+.pages{
+  background: url('../../public/bg-2.png'), url('../../public/bg1.jpg'), #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+.split-text{
+  display: block;
+  font-family: 'Alegreya Sans', sans-serif;
+  
+}
+
+.hiiIcon{
+  display: inline-block;
+  animation: helloAnimation 800ms ease-in-out 0s infinite alternate;
+  transform-origin: center;
+  
+}
+
+@keyframes helloAnimation {
+  from{
+    transform:  translateY(-5px) rotateZ(20deg);
+  }
+  to{
+    transform: translateX(0px) translateY(-5px) rotateZ(40deg);
+  }
+}
+
+.text-name{
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+}
+
+.text-hello{
+  word-spacing: .5rem;
+}
+
+.text-about{
+  margin-top: 30px;
+  word-spacing: .5rem;
+}
+
+
+.text-paragraph{
+  font-weight: 500;
+  text-align: justify;
+  word-wrap: break-word;
+  word-spacing: .5rem;
+}
+
+.text-paragraph-l1{
+  color: white;
+  font-weight: 800;
+  margin: 15px 0px;
+}
+
+.button-container{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+.row{
+  padding: 0px 120px 0px 40px;
+}
+.left{
+  width: 75%;
+}
+
+.right{
+  display: none;
+  justify-content: center;
+  align-self: center;
+  margin: 20px 0;
+}
+
+// @media screen and (max-width:350px) {
+//   .text-hello{
+//     margin-bottom: 10px;
+//     font-size: 1.3rem;
+//   }
+//   .text-name{
+//     font-size: 2.1rem;
+//     line-height: 2rem;
+//   }
+//   .text-about{
+//     font-size: 1.5rem;
+//     line-height: 20px;
+//     text-align: left;
+//     min-height: 40px;
+//     margin-top: 20px;
+//   }
+//   .text-paragraph{
+//     font-size: 1.3rem;
+//     word-spacing: .3rem;
+//   }  .button-container{
+//     margin: -2rem 0rem 0rem 0px;
+//     padding-bottom: 0rem;
+//   }
+// }
+// @media only screen and (min-width: 350px) {
+//   .text-hello{
+//     margin-bottom: 15px;
+//     font-size: 1.3rem;
+//   }
+//   .text-name{
+//     font-size: 2.6rem;
+//     line-height: 2.5rem;
+//   }
+//   .text-about{
+//     font-size: 1.7rem;
+//     line-height: 20px;
+//     text-align: left;
+//     min-height: 40px;
+//     margin-top: 20px;
+//   }
+//   .row{
+//   padding: 0px 120px 0px 40px;
+// }
+// .left{
+//   width: 75%;
+// }
+
+// .right{
+//   display: none;
+//   width: 100%;
+//   justify-content: center;
+//   align-self: center;
+//   margin: 20px 0;
+// }
+//   .text-paragraph{
+//     font-size: 1.3rem;
+//     line-height: 1.4rem;
+//     word-spacing: .1rem;
+//   }
+//   .button-container{
+//     margin: -1rem 0rem 0rem 0px;
+//     padding-bottom: 0rem;
+//   }
+// }
+
+// @media only screen and (max-width: 430px) {
+//   .button-container{
+//     flex-direction: column;
+//   }
+//   }
+
+//   @media only screen and (min-width: 500px) {
+//     .text-hello{
+//       margin-bottom: 15px;
+//       font-size: 1.5rem;
+//     }
+//     .text-name{
+//       font-size: 3rem;
+//       line-height: 3rem;
+//       word-spacing: .3rem;
+//     }
+//     .text-about{
+//       font-size: 2rem;
+//       line-height: 20px;
+//       text-align: left;
+//       min-height: 40px;
+//       margin-top: 20px;
+//     }
+//     .right{
+//       align-self: auto;
+//       padding: 10px;
+//     }
+//     .text-paragraph{
+//       font-size: 1.5rem;
+//       line-height: 1.5rem;
+//       word-spacing: .1rem;
+//     }
+//   }
+
+
+// @media only screen and (min-width: 681px) {
+//   .text-hello{
+//     margin-bottom: 15px;
+//     font-size: 1.8rem;
+//   }
+//   .text-name{
+//     font-size: 3.3rem;
+//     line-height: 3.3rem;
+//     word-spacing: .5rem;
+//   }
+//   .text-about{
+//     font-size: 2.4rem;
+//     line-height: 2.4rem;
+//     text-align: left;
+//     min-height: 40px;
+//     margin-top: 20px;
+//   }
+//   .right{
+//     padding: 60px;
+//   }
+//   .text-paragraph{
+//     font-size: 1.8rem;
+//     line-height: 1.8rem;
+//     word-spacing: .3rem;
+//   }
+//   .button-container{
+//     margin: -1rem 0rem 0rem 0px;
+//     padding-bottom: 0rem;
+//   }
+// }
+
+// @media only screen and (min-width: 992px) {
+//   .text-hello{
+//     margin-bottom: 15px;
+//     font-size: 1.7rem;
+//   }
+//   .text-name{
+//     font-size: 3.3rem;
+//     line-height: 3.3rem;
+//     word-spacing: .5rem;
+//   }
+//   .text-about{
+//     font-size: 2.3rem;
+//     line-height: 2.3rem;
+//     text-align: left;
+//     min-height: 40px;
+//     margin-top: 10px;
+//   }
+//   .right{
+//     padding: 0px;
+//     align-self: center;
+//     display: none;
+//   }
+//   .left{
+//     width: 70%;
+//   }
+//   .text-paragraph{
+//     font-size: 1.7rem;
+//     line-height: 1.7rem;
+//     word-spacing: .2rem;
+//   }
+//   .button-container{
+//     margin: -1rem 0rem 0rem 0px;
+//     padding-bottom: 0rem;
+//   }
+// }
+
+// @media only screen and (min-width: 1200px) {
+ 
+// }
+
+  /* Desktops */
+  @media only screen and (min-width: 1441px) {
+    .text-hello{
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    .text-name{
+      font-size: 4.5rem;
+      line-height: 5rem;
+      word-spacing: 1rem;
+    }
+    .text-about{
+      font-size: 2.5rem;
+      line-height: 4rem;
+      text-align: left;
+      min-height: 40px;
+      margin-top: 0px;
+    }
+    .row{
+      padding: 10px 120px 10px 40px;
+    }
+    .left{
+      width: 75%;
+    }
+    .right{
+      display: none;
+      width: 100%;
+      justify-content: center;
+      align-self: center;
+      margin: 20px 0;
+    }
+    .text-paragraph{
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      word-spacing: .3rem;
+    }
+    .button-container{
+      margin: 0rem 0rem 0rem 0px;
+      padding-bottom: 0rem;
+    }
+  }
+  
+  /* Laptops */
+  @media only screen and (min-width: 1020px) and (max-width: 1440px) {
+    .text-hello{
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    .text-name{
+      font-size: 4.5rem;
+      line-height: 5rem;
+      word-spacing: 1rem;
+    }
+    .text-about{
+      font-size: 2.5rem;
+      line-height: 4rem;
+      text-align: left;
+      min-height: 40px;
+      margin-top: 0px;
+    }
+    .row{
+      padding: 10px 120px 10px 40px;
+    }
+    .left{
+      width: 70%;
+    }
+    .right{
+      display: none;
+      width: 100%;
+      justify-content: center;
+      align-self: center;
+      margin: 20px 0;
+    }
+    .text-paragraph{
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      word-spacing: .3rem;
+    }
+    .button-container{
+      margin: 0rem 0rem 0rem 0px;
+      padding-bottom: 0rem;
+    }
+  }
+  
+  /* Tablets - Portrait and Landscape */
+  @media only screen and (min-width: 769px) and (max-width: 1020px) {
+    .text-hello{
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    .text-name{
+      font-size: 4.5rem;
+      line-height: 5rem;
+      word-spacing: 1rem;
+    }
+    .text-about{
+      font-size: 2.5rem;
+      line-height: 4rem;
+      text-align: left;
+      min-height: 40px;
+      margin-top: 0px;
+    }
+    .row{
+      padding: 0px 120px 0px 40px;
+    }
+    .left{
+      width: 50%;
+    }
+    .right{
+      display: none;
+    }
+    .text-paragraph{
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      word-spacing: .3rem;
+    }
+    .button-container{
+      margin: 0rem 0rem 0rem 0px;
+      padding-bottom: 0rem;
+    }
+  }
+  
+  @media only screen and (min-width: 993px) and (max-width: 1020px) and (orientation: landscape) {
+    .text-hello{
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    .text-name{
+      font-size: 4.5rem;
+      line-height: 5rem;
+      word-spacing: 1rem;
+    }
+    .text-about{
+      font-size: 2.5rem;
+      line-height: 4rem;
+      text-align: left;
+      min-height: 40px;
+      margin-top: 0px;
+    }
+    .row{
+      padding: 40px 0px 40px 40px;
+      align-items: start;
+    }
+    .left{
+      width: 70%;
+      margin: 0;
+    }
+    .right{
+      display: none;
+    }
+    .text-paragraph{
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      word-spacing: .3rem;
+    }
+    .button-container{
+      margin: 0rem 0rem 0rem 0px;
+      padding-bottom: 0rem;
+    }
+  }
+
+
+  /* Landscape Tablets */
+  @media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: landscape) {
+    /* Your styles for landscape tablets here */
+    .pages{
+      background: url("../../public/bg1.jpg"), #000;
+    }
+    .row{
+      padding: 40px 0px 40px 40px;
+      align-items: start;
+      flex-direction: column;
+    }
+    .left{
+      width: 100%;
+      margin: 0;
+    }
+    .right{
+      display: flex;
+      width: 100%;
+      margin: 40px auto;
+    }
+
+    .text-hello{
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    .text-name{
+      font-size: 4.5rem;
+      line-height: 5rem;
+      word-spacing: 1rem;
+    }
+    .text-about{
+      font-size: 2.5rem;
+      line-height: 4rem;
+      text-align: left;
+      min-height: 40px;
+      margin-top: 0px;
+    }
+    .text-paragraph{
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      word-spacing: .3rem;
+    }
+    .button-container{
+      margin: 0rem 0rem 0rem 0px;
+      padding-bottom: 0rem;
+    }
+  }
+  
+  /* Mobiles - Portrait and Landscape */
+  @media only screen and (max-width: 768px) {
+    .pages{
+      background: url("../../public/bg1.jpg"), #000;
+    }
+    .text-hello{
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    .text-name{
+      font-size: 4.5rem;
+      line-height: 5rem;
+      word-spacing: 1rem;
+    }
+    .text-about{
+      font-size: 2.5rem;
+      line-height: 4rem;
+      text-align: left;
+      min-height: 40px;
+      margin-top: 0px;
+    }
+    .row{
+      padding: 40px 0px 40px 40px;
+      align-items: start;
+      flex-direction: column;
+    }
+    .left{
+      width: 100%;
+      margin: 0;
+    }
+    .right{
+      display: flex;
+      width: 100%;
+      margin: 40px auto;
+    }
+    .text-paragraph{
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      word-spacing: .3rem;
+    }
+    .button-container{
+      margin: 0rem 0rem 0rem 0px;
+      padding-bottom: 0rem;
+    }
+  }
+  
+  /* Landscape Phones */
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    /* Your styles for landscape phones here */
+    .pages{
+      background: url("../../public/bg1.jpg"), #000;
+    }
+    .row{
+      padding: 40px 0px 40px 40px;
+      align-items: start;
+      flex-direction: column;
+    }
+    .left{
+      width: 100%;
+      margin: 0;
+    }
+    .right{
+      display: flex;
+      width: 100%;
+      margin: 40px auto;
+    }
+
+    .text-hello{
+          margin-bottom: 15px;
+          font-size: 1.8rem;
+        }
+        .text-name{
+          font-size: 3.3rem;
+          line-height: 3.3rem;
+          word-spacing: .5rem;
+        }
+        .text-about{
+          font-size: 2.4rem;
+          line-height: 2.4rem;
+          text-align: left;
+          min-height: 40px;
+          margin-top: 20px;
+        }
+        .text-paragraph{
+          font-size: 1.8rem;
+          line-height: 1.8rem;
+          word-spacing: .3rem;
+        }
+        
+    .button-container{
+      margin: -1rem 0rem 0rem 0px;
+      padding-bottom: 0rem;
+    }
+  }
+  
+  /* Small Phones */
+  @media only screen and (max-width: 480px) {
+    .pages{
+      background: url("../../public/bg1.jpg"), #000;
+    }
+    .row{
+      padding: 40px 0px 40px 40px;
+      align-items: start;
+      flex-direction: column;
+    }
+    .left{
+      width: 100%;
+      margin: 0;
+    }
+    .right{
+      display: flex;
+      width: 100%;
+      margin: 40px auto;
+    }
+    .text-hello{
+          margin-bottom: 15px;
+          font-size: 1.3rem;
+        }
+        .text-name{
+          font-size: 2.6rem;
+          line-height: 2.5rem;
+        }
+        .text-about{
+          font-size: 1.7rem;
+          line-height: 20px;
+          text-align: left;
+          min-height: 40px;
+          margin-top: 20px;
+        } 
+        .text-paragraph{
+              font-size: 1.3rem;
+              line-height: 1.4rem;
+              word-spacing: .1rem;
+            }
+            .button-container{
+              flex-direction: column;
+              margin: -1rem 0rem 0rem 0px;
+              padding-bottom: 0rem;
+            }
+  }
+  
+  /* Extra Small Phones */
+  @media only screen and (max-width: 320px) {
+    .pages{
+      background: url("../../public/bg1.jpg"), #000;
+    }
+    .row{
+      padding: 40px 0px 40px 40px;
+      align-items: start;
+      flex-direction: column;
+    }
+    .left{
+      width: 100%;
+      margin: 0;
+    }
+    .right{
+      display: flex;
+      width: 100%;
+      margin: 40px auto;
+    }
+    .text-hello{
+          margin-bottom: 10px;
+          font-size: 1.3rem;
+        }
+        .text-name{
+          font-size: 2.1rem;
+          line-height: 2rem;
+        }
+        .text-about{
+          font-size: 1.5rem;
+          line-height: 20px;
+          text-align: left;
+          min-height: 40px;
+          margin-top: 20px;
+        }
+        .text-paragraph{
+          font-size: 1.3rem;
+          word-spacing: .3rem;
+        } .button-container{
+              flex-direction: column;
+              margin: -2rem 0rem 0rem 0px;
+              padding-bottom: 0rem;
+            }
+  } 

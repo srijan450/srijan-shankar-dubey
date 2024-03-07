@@ -45,11 +45,11 @@ const Projects = () => {
         nextLink={"/skills"}
       />
       <ProjectLoader title={loader.title} />
-      <section className={styles.content}>
+      <section className={`pages-img-background ${styles.content}`}>
         <h2 className="heading" style={{ display: "block" }}>
           Work & Projects
         </h2>
-        <p className="text">
+        <p className="text project-text">
           From frontend development to backend development, From Web Components
           and UI/UX animations to React.JS, Redux, PHP, and Node.JS. Check out
           my latest web software development portfolio projects.

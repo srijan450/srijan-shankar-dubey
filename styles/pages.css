@@ -1,62 +1,36 @@
 
-/* Developed by Srijan Shankar Dubey */
+ /* Developed by Srijan Shankar Dubey  */
 .pages{
-    background-color: black;
-    height: 100vh;
     width: 100%;
-    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
-.main{
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    padding: 0px 120px;
+.pages-img-background{
+    background: url('../public/bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-
-
-.main::-webkit-scrollbar{
-    width: 5px;
-  }
-
-.main::-webkit-scrollbar-button{
-    height: 0;
-    width: 5px;
-}
-
-.main::-webkit-scrollbar-thumb{
-    border-radius: 50px;
-    background: #606060;
-    width: 5px;
-}
-
-.main::-webkit-scrollbar-corner{
-    border-radius: 40px;
-    width: 5px;
-}
-
-.main::-webkit-scrollbar-track{
-    width: 5px;
-}
-
-.main::-webkit-scrollbar-track-piece{
-    width: 5px;
-}
-
 
 .row{
+    width: 100%;
     display: flex;
+    padding: 60px 120px;
+    z-index: 1;
     justify-content: space-between;
-    height: fit-content;
+    align-items: center;
+    flex-direction: row;
+    min-height: 100vh;
 }
 
 .left{
     color: var(--stark);
     width: 60%;
+    height: inherit;
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -65,12 +39,14 @@
 
 .right{
     display: flex;
+    width: 35%;
     justify-content: center;
     align-self: center;
 }
 
 .heading{
     font-size: 4.5rem;
+    margin: 1.5rem 0px;
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 900;
     color: var(--stark);
@@ -88,182 +64,20 @@
     font-weight: 500;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 350px) {
-    .pages{
-        padding: 60px 0px;
-    }
-    .main{
-        padding: 0px 10px;
-    }
-    .row{
-        flex-direction: column;
-    }
-    .left{
-        order: 2;
-        width: 100%;
-    }
-    .right{
-        order: 1;
-        padding: 60px;
-    }
-    .heading{
-        display: none;
-        margin-bottom: 0;
-        font-size: 2.5rem;
-    }
-    .heading2{
-        display: block;
 
-    }
-    .text{
-        font-size: 1.2rem;
-    }
-}
-
-@media only screen and (min-width: 350px) {
-    .pages{
-        padding: 60px 0px;
-    }
-    .main{
-        padding: 0px 12px;
-    }
-    .row{
-        flex-direction: column;
-    }
-    
-    .left{
-        order: 2;
-        width: 100%;
-    }
-    .right{
-        order: 1;
-        width: 100%;
-        padding:60px 0px;
-    }
-    .heading{
-        display: none;
-        margin-bottom: 0;
-        font-size: 3.3rem;
-    }
-    .heading2{
-        display: block;
-
-    }
-    .text{
-        font-size: 1.3rem;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 681px) {
-    .pages{
-        padding: 60px 0px;
-    }
-    .main{
-        padding: 0px 110px;
-    }
-    .row{
-        flex-direction: column;
-    }
-    .left{
-        order: 2;
-        width: 100%;
-    }
-    .right{
-        order: 1;
-        padding: 60px;
-    }
-    .heading{
-        display: none;
-        margin-bottom: 0;
-        font-size: 3.8rem;
-    }
-    .heading2{
-        display: block;
-    }
-    .text{
-        font-size: 1.3rem;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .pages{
-        padding: 60px 0px;
-    }
-    .main{
-        padding: 0px 110px;
-    }
-    .row{
-        flex-direction: column;        
-    }
-    .left{
-        order: 2;
-        width: 100%;
-    }
-    .right{
-        order: 1;
-        padding: 60px;
-    }
-    .heading{
-        display: none;
-        margin-bottom: 0;
-        font-size: 3.8rem;
-    }
-    .heading2{
-        display: block;
-        /* text-align: center; */
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .pages{
-        padding: 60px 0px;
-    }
-    .main{
-        padding: 0px 110px;
-    }
-    .row{
-        flex-direction: row;
-        
-    }
-    .left{
-        width: 60%;
-        order: 1;
-        height: max-content;
-        padding-bottom: 0;
-    }
-    .heading{
-        font-size: 4rem;
-        display: block;
-        margin-bottom: 1rem;
-    }
-    .heading2{
-        display: none;
-    }
-    .right{
-        width: 35%;
-        order: 2;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .pages{
-        padding: 0;
-    }
-    .main{
-        padding: 0px 120px;
-    }
+  /* Desktops */
+@media only screen and (min-width: 1441px) {
     .row{
         height: 100%;
+        padding: 0px 100px 0px 120px;
     }
     .heading{
         font-size: 4.5rem;
         display: block;
         margin-bottom: 1.5rem;
+    }
+    .text{
+        font-size: 1.3rem;
     }
     .heading2{
         display: none;
@@ -275,4 +89,207 @@
     .right{
         width: 35%;
     }
+  }
+  
+  /* Laptops */
+  @media only screen and (min-width: 1020px) and (max-width: 1440px) {
+    .row{
+        height: 100%;
+        padding: 40px 20px 40px;
+    }
+    .heading{
+        font-size: 3.5rem;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+    .heading2{
+        display: none;
+    }
+    .text{
+        font-size: 1.2rem;
+    }
+    .left{
+        width: 65%;
+        height: auto;
+    }
+    .right{
+        width: 30%;
+    }
+  }
+  
+  /* Tablets - Portrait and Landscape */
+  @media only screen and (min-width: 769px) and (max-width: 1020px) {
+    .row{
+        flex-direction: column;
+        align-items: start; 
+    }
+    .left{
+       order: 2;
+       width: 75%;
+   }
+   .right{
+
+   }
+   .heading{
+       display: none;        
+       font-size: 2.8rem;
+       margin-top: 0;
+   }
+   .heading2{
+       display: block;
+       width: 100%;
+       text-align: start;
+   } 
+    .text{
+       font-size: 1.3rem;
+   }
+   .project-text{
+       margin: 40px 0px 20px;
+   }
+
+  }
+  
+  /* Landscape Tablets */
+  @media only screen and (min-width: 769px) and (max-width: 1020px) and (orientation: landscape) {
+    /* Your styles for landscape tablets here */
+    .row{
+        flex-direction: column;
+        align-items: center; 
+        padding: 40px 120px 40px;
+    }
+    .left{
+       order: 2;
+       width: 100%;
+       margin: 0px auto;
+   }
+   .right{
+    order: 1;
+    width: 100%;
+   }
+   .heading{
+       display: none;        
+       font-size: 3rem;
+       margin-top: 0;
+   }
+   .heading2{
+       display: block;
+       width: 100%;
+   } 
+    .text{
+       font-size: 1.2rem;
+   }
+   .project-text{
+       margin: 40px 0px 20px;
+   }
+  }
+  
+  /* Mobiles - Portrait and Landscape */
+  @media only screen and (max-width: 768px) {
+    .row{
+        flex-direction: column;
+        align-items: center; 
+        padding: 40px 80px 40px;
+    }
+    .left{
+       order: 2;
+       width: 100%;
+       margin: 0px auto;
+   }
+   .right{
+    order: 1;
+    width: 100%;
+   }
+   .heading{
+       display: none;        
+       font-size: 3rem;
+       margin-top: 0;
+   }
+   .heading2{
+       display: block;
+       width: 100%;
+   } 
+    .text{
+       font-size: 1.2rem;
+   }
+   .project-text{
+       margin: 40px 0px 20px;
+   }
+  }
+  
+  /* Landscape Phones */
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    .row{
+        flex-direction: column;
+        align-items: center; 
+        padding: 40px 120px 40px;
+    }
+    .left{
+       order: 2;
+       width: 100%;
+       margin: 0px auto;
+   }
+   .right{
+    order: 1;
+    width: 100%;
+   }
+   .heading{
+       display: none;        
+       font-size: 3rem;
+       margin-top: 0;
+   }
+   .heading2{
+       display: block;
+       width: 100%;
+   } 
+    .text{
+       font-size: 1.1rem;
+   }
+   .project-text{
+       margin: 40px 0px 20px;
+   }
+   
 }
+  /* Small Phones */
+  @media only screen and (max-width: 480px) {
+    .row{
+         flex-direction: column; 
+         padding: 60px 20px 40px !important;
+     }
+    
+     .left{
+        order: 2;
+        width: 100%;
+    }
+    .right{
+        order: 1;
+        width: 100%;
+        padding:60px 0px;
+    }
+    .heading{
+        display: none;        
+        font-size: 2.6rem;
+        margin-top: 0;
+    }
+    .heading2{
+        display: block;
+        width: 100%;
+        text-align: start;
+    } 
+     .text{
+        font-size: 1.2rem;
+    }
+    .project-text{
+        margin: 40px 0px 20px;
+    }
+  }
+  
+  /* Extra Small Phones */
+  @media only screen and (max-width: 320px) {
+    
+  }
+  
+
+  /* .pages-home-bg{
+    background: url("../public/bg1.jpg"), #000;
+} */
+  
