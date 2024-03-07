@@ -5,8 +5,9 @@
 
 // const inter = Inter({ subsets: ["latin"] });
 
-// export default function Home() {
-//   return (
+export default function Home() {
+  return <></>;
+}
 //     <>
 //       <Head>
 //         <title>Create Next App</title>
