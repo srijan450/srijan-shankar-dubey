@@ -1,11 +1,10 @@
 /* Developed by Srijan Shankar Dubey */
 
 .pages{
-  background: url('../../public/bg-2.png'), url('../../public/bg1.jpg'), #000;
+  background: url('../../public/bg-2.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
 }
 
 
@@ -418,7 +417,7 @@
   @media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: landscape) {
     /* Your styles for landscape tablets here */
     .pages{
-      background: url("../../public/bg1.jpg"), #000;
+      background: none;
     }
     .row{
       padding: 40px 0px 40px 40px;
@@ -465,7 +464,7 @@
   /* Mobiles - Portrait and Landscape */
   @media only screen and (max-width: 768px) {
     .pages{
-      background: url("../../public/bg1.jpg"), #000;
+      background: none;
     }
     .text-hello{
       margin-bottom: 15px;
@@ -512,7 +511,7 @@
   @media only screen and (max-width: 768px) and (orientation: landscape) {
     /* Your styles for landscape phones here */
     .pages{
-      background: url("../../public/bg1.jpg"), #000;
+      background: none;
     }
     .row{
       padding: 40px 0px 40px 40px;
@@ -560,7 +559,7 @@
   /* Small Phones */
   @media only screen and (max-width: 480px) {
     .pages{
-      background: url("../../public/bg1.jpg"), #000;
+      background: none;
     }
     .row{
       padding: 40px 0px 40px 40px;
@@ -606,7 +605,7 @@
   /* Extra Small Phones */
   @media only screen and (max-width: 320px) {
     .pages{
-      background: url("../../public/bg1.jpg"), #000;
+      background: none;
     }
     .row{
       padding: 40px 0px 40px 40px;

@@ -45,7 +45,7 @@ const Projects = () => {
         nextLink={"/skills"}
       />
       <ProjectLoader title={loader.title} />
-      <section className={`pages-img-background ${styles.content}`}>
+      <section className={`${styles.content}`}>
         <h2 className="heading" style={{ display: "block" }}>
           Work & Projects
         </h2>

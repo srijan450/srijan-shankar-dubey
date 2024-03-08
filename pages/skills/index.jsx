@@ -16,13 +16,13 @@ const About = () => {
     "Redux",
     "TypeScript",
     "Next.js",
-    "Material-UI",
-    "Bootstrap",
+    // "Material-UI",
+    //     "Bootstrap",
 
     "Node.js",
     "Express.js",
-    "PHP",
-    "CodeIgniter",
+    // "PHP",
+    //     "CodeIgniter",
     "Django",
 
     "PostgresSQL",
@@ -37,7 +37,7 @@ const About = () => {
     "Confluence",
     "BitBucket",
     "Postman",
-    "Slack",
+    // "Slack",
     "Figma",
     "Git",
 
@@ -51,14 +51,13 @@ const About = () => {
         prev={"home"}
         prevLink={"/"}
       />
-      <main className="pages pages-img-background">
+      <main className="pages">
         <section className="row">
           <h1 className="heading heading2">Skills & Experience</h1>
           <div className="left">
-            <>
-              <h1 className="heading">Skills & Experience</h1>
-              <SkillMarquee>
-                <>
+            <h1 className="heading">Skills & Experience</h1>
+            <SkillMarquee>
+              {/* <>
                   <p className="text">
                     I am an innovative and creative web developer from India. I
                     have a serious passion for creating full-fleshed websites
@@ -82,16 +81,37 @@ const About = () => {
                     Interested in whole frontend spectrum, backend spectrum and
                     full-stack application development.
                   </p>
-                </>
-                <div className={styles["button-container"]}>
-                  <SuperButton text={"contact me"} to={"/contact"} />
-                  <SuperButton_A
-                    text={"My Resume"}
-                    to={"https://bit.ly/srijan_resume"}
-                  />
-                </div>
-              </SkillMarquee>
-            </>
+                </> */}
+              <p className="text">
+                Proficiency in C, C++, Python, Java, and JavaScript for tackling
+                diverse projects with precision and efficiency.
+              </p>
+              <p className="text">
+                Experience across the complete web development stack, including
+                HTML, CSS, JavaScript, React.js, Redux, TypeScript, Next.js,
+                Material-UI, and Bootstrap, with a focus on creating visually
+                appealing and functional websites.
+              </p>
+              <p className="text">
+                Skilled in backend technologies such as Node.js, Express.js,
+                PHP, CodeIgniter, and Django, along with proficiency in database
+                management using PostgreSQL, MySQL, and MongoDB.
+              </p>
+              <p className="text">
+                Well-versed in Agile methodologies and SDLC, bringing a
+                structured and collaborative approach to project development.
+                Strong problem-solving skills ensure the delivery of efficient
+                and scalable solutions, supported by a deep understanding of CS
+                fundamentals.
+              </p>
+              <div className={styles["button-container"]}>
+                <SuperButton text={"contact me"} to={"/contact"} />
+                <SuperButton_A
+                  text={"My Resume"}
+                  to={"https://bit.ly/srijan_resume"}
+                />
+              </div>
+            </SkillMarquee>
           </div>
 
           <div className={`right ${styles.right}`}>
@@ -101,7 +121,7 @@ const About = () => {
 
         <section className="row">
           <div className="col">
-            <h4 className="heading">Skill-Set</h4>
+            <h4 className="sub-heading">Skill-Set</h4>
             {skills.map((item, key) => (
               <SkillLogo key={key} name={item} />
             ))}

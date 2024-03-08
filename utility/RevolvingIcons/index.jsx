@@ -99,7 +99,7 @@ const RevolvingIcons = () => {
 
           <div className={styles["center-item"]}>
             <img
-              src="./srijan_shankar_dubey.png"
+              src="https://srijan450.github.io/srijan-shankar-dubey/srijan_shankar_dubey.png"
               alt="Srijan Shankar Dubey, Portfolio Website, Frontend Developer, Backend Developer, Full Stack Developer, MERN stack Developer, Coder, Wordpress Developer, Software Developer"
             />
           </div>

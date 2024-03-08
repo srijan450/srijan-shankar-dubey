@@ -11,13 +11,6 @@
     position: absolute;
 }
 
-.pages-img-background{
-    background: url('../public/bg1.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 .row{
     width: 100%;
     display: flex;
@@ -53,6 +46,14 @@
     font-weight: 900;
     color: var(--stark);
     margin-bottom: 1.5rem;
+}
+
+.sub-heading{
+    color: var(--stark);
+    font-size: 3rem;
+    margin: 1.5rem 0px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
 }
 
 .heading2{

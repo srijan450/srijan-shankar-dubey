@@ -11,8 +11,8 @@ const Home = () => {
       <PageNavigator
         prev={false}
         prevLink={""}
-        next={"about"}
-        nextLink={"/about"}
+        next={"Skills"}
+        nextLink={"/skills"}
       />
       <section className={`pages ${styles.pages}`}>
         <div className={`row ${styles.row}`}>

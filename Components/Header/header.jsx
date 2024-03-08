@@ -64,6 +64,7 @@ const Header = () => {
               />
             </ul>
           </div>
+          {/*  Quick Contacts */}
           <div>
             <div className={styles.divider}>
               <span className={styles.span}>Quick contact</span>
@@ -91,6 +92,11 @@ const Header = () => {
               </ul>
             </div>
           </div>
+
+          {/*  */}
+          <p className={styles.copyright}>
+            © Srijan Shankar Dubey @ {new Date().getFullYear()}
+          </p>
         </nav>
       </div>
     </>
