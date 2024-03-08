@@ -51,8 +51,6 @@ const Home = () => {
             <p
               className={`${styles["split-text"]} ${styles["text-paragraph"]}`}
             >
-              {/* I am an independent creative, IT graduate who likes to craft solid
-              and scalable websites with great user experience. */}
               Driven by creativity and a passion for crafting robust and
               scalable websites. My focus is on delivering an exceptional user
               experience through well-designed and innovative solutions. Join me
@@ -65,10 +63,6 @@ const Home = () => {
               <SuperButton to={"/about"} text={"about me"} />
             </div>
           </div>
-          {/* <div className={`right ${styles.right}`}> */}
-          {/* <RevolvingIcons /> */}
-          {/* <ReactBot/>
-          </div> */}
         </div>
       </section>
       <video
@@ -81,10 +75,7 @@ const Home = () => {
       >
         <source
           type="video/mp4"
-          src={
-            "./test.mp4"
-            // "https://srijan450.github.io/srijan-shankar-dubey/black-circle.mp4"
-          }
+          src={"https://srijan450.github.io/srijan-shankar-dubey/test.mp4"}
         />
       </video>
     </>

@@ -20,7 +20,7 @@ const Layout = ({ count, children }) => {
       </Head>
       <Header />
       <MainLoader />
-      <main className={`page main-div`} id="page">
+      <main className={`page`} id="page">
         {children}
       </main>
 
