@@ -1,63 +1,102 @@
-
-.button{
+.buttonL{
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--void);
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 700;
+  background: linear-gradient(to right, #404040 50%, white 50%);
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  background-size: 200% 100%;
+  text-transform: uppercase;
+  position: relative;
+  border-radius: 5px;
+  &::before{
+    content: '\02B05';
     display: inline-block;
-    padding: 10px 40px;
-    font-size: 2rem;
-    text-decoration: none;
-    color: var(--void);
-    font-family: 'Alegreya Sans', sans-serif;
-    font-weight: 700;
-    background: linear-gradient(to right, #404040 50%, white 50%);
-    background-position: right bottom;
-    transition: all .5s ease-out;
-    background-size: 200% 100%;
-    text-transform: uppercase;
-    position: relative;
-    border-radius: 5px;
-    &::after{
-      content: '\0279E';
-      display: inline-block;
-      margin-left: 10px;
-      -webkit-transition: transform 0.3s ease-out;
-            -moz-transition: transform 0.3s ease-out;
-            -ms-transition: transform 0.3s ease-out;
-            -o-transition: transform 0.3s ease-out;
-            transition: transform 0.3s ease-out;
-    }
-  
-    &:hover{
-      color: white;
-      background-position: left bottom;
-  
-      &:after{
-        -webkit-transform: translateX(6px);
-        -moz-transform: translateX(6px);
-        -ms-transform: translateX(6px);
-        -o-transform: translateX(6px);
-        transform: translateX(6px);
-      }
-    }
-  
+    margin-right: 10px;
+    -webkit-transition: transform 0.3s ease-out;
+          -moz-transition: transform 0.3s ease-out;
+          -ms-transition: transform 0.3s ease-out;
+          -o-transition: transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
   }
 
+  &:hover{
+    color: white;
+    background-position: left bottom;
+
+    &:before{
+      -webkit-transform: translateX(-6px);
+      -moz-transform: translateX(-6px);
+      -ms-transform: translateX(-6px);
+      -o-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+  }
+}
+
+.buttonR{
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--void);
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 700;
+  background: linear-gradient(to right, #404040 50%, white 50%);
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  background-size: 200% 100%;
+  text-transform: uppercase;
+  position: relative;
+  border-radius: 5px;
+  &::after{
+    content: '\0279E';
+    display: inline-block;
+    margin-left: 10px;
+    -webkit-transition: transform 0.3s ease-out;
+          -moz-transition: transform 0.3s ease-out;
+          -ms-transition: transform 0.3s ease-out;
+          -o-transition: transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+  }
+
+  &:hover{
+    color: white;
+    background-position: left bottom;
+
+    &:after{
+      -webkit-transform: translateX(6px);
+      -moz-transform: translateX(6px);
+      -ms-transform: translateX(6px);
+      -o-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+  }
+
+}
+
   @media only screen and (min-width: 740px) {
-    .button{
+    .buttonL, .buttonR{
       font-size: 1.5rem;
       padding: 10px 16px;
     }
   }
 
   @media only screen and (min-width: 1200px) {
-    .button{
-      padding: 10px 40px;
+    .buttonL, .buttonR{
+    padding: 10px 40px;
     font-size: 1.5rem;
     }
   }
 
   @media screen and (max-width:740px) {
-    .button{
-        padding: 10px 16px;
-        margin: 8px 1px;
+      .buttonL, .buttonR{
+      padding: 10px 16px;
+      margin: 8px 1px;
       font-size: 1.5rem;
       text-align: center;
       }

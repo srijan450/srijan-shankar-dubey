@@ -59,7 +59,7 @@ const Home = () => {
               experiences.
             </p>
             <div className={styles["button-container"]}>
-              <SuperButton to={"/contact"} text={"Contact me"} />
+              <SuperButton to={"/contact"} text={"Contact me"} dir="left"/>
               <SuperButton to={"/about"} text={"about me"} />
             </div>
           </div>

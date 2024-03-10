@@ -105,7 +105,7 @@ const About = () => {
                 fundamentals.
               </p>
               <div className={styles["button-container"]}>
-                <SuperButton text={"contact me"} to={"/contact"} />
+                <SuperButton text={"contact me"} to={"/contact"} dir="left" />
                 <SuperButton_A
                   text={"My Resume"}
                   to={"https://bit.ly/srijan_resume"}
